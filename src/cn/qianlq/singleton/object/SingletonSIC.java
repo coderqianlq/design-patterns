@@ -10,8 +10,8 @@ package cn.qianlq.singleton.object;
  */
 
 /**
- * @author: qianliqing
- * @date: 2018/4/8 下午3:41
+ * @author qianliqing
+ * @date 2018/4/8 下午3:41
  * email: qianlq0824@gmail.com
  */
 
