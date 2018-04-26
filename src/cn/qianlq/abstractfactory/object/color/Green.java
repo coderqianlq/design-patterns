@@ -1,8 +1,8 @@
 package cn.qianlq.abstractfactory.object.color;
 
 /**
- * @author: qianliqing
- * @date: 2018/4/8 下午5:37
+ * @author qianliqing
+ * @date 2018/4/8 下午5:37
  * email: qianlq0824@gmail.com
  */
 

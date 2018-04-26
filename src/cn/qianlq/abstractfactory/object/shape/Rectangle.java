@@ -1,8 +1,8 @@
 package cn.qianlq.abstractfactory.object.shape;
 
 /**
- * @author: qianliqing
- * @date: 2018/4/8 下午4:26
+ * @author qianliqing
+ * @date 2018/4/8 下午4:26
  * email: qianlq0824@gmail.com
  */
 

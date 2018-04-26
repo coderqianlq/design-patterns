@@ -5,8 +5,8 @@ import cn.qianlq.abstractfactory.object.color.Color;
 import cn.qianlq.abstractfactory.object.shape.Shape;
 
 /**
- * @author: qianliqing
- * @date: 2018/4/8 下午7:34
+ * @author qianliqing
+ * @date 2018/4/8 下午7:34
  * email: qianlq0824@gmail.com
  */
 

@@ -8,8 +8,8 @@ import cn.qianlq.abstractfactory.object.shape.Shape;
  */
 
 /**
- * @author: qianliqing
- * @date: 2018/4/8 下午5:39
+ * @author qianliqing
+ * @date 2018/4/8 下午5:39
  * email: qianlq0824@gmail.com
  */
 

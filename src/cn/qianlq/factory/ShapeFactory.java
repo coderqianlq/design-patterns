@@ -6,8 +6,8 @@ import cn.qianlq.factory.object.Shape;
 import cn.qianlq.factory.object.Square;
 
 /**
- * @author: qianliqing
- * @date: 2018/4/8 下午4:29
+ * @author qianliqing
+ * @date 2018/4/8 下午4:29
  * email: qianlq0824@gmail.com
  */
 
