@@ -21,7 +21,7 @@ public class SingletonLhsNoSyn {
 
     private SingletonLhsNoSyn() {}
 
-    public static synchronized SingletonLhsNoSyn getInstance() {
+    public static SingletonLhsNoSyn getInstance() {
         if (instance == null) {
             instance = new SingletonLhsNoSyn();
         }
