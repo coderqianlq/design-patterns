@@ -44,7 +44,7 @@
 > 在Android源码中，我们最常用到的Builder模式就是AlertDialog.Builder， 使用该Builder来构建复杂的AlertDialog对象。简单示例如下：
 
 ```java
-	//显示基本的AlertDialog  
+    //显示基本的AlertDialog  
     private void showDialog(Context context) {  
         AlertDialog.Builder builder = new AlertDialog.Builder(context);  
         builder.setIcon(R.drawable.icon);  
