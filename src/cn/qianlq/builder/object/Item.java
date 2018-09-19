@@ -8,6 +8,8 @@ package cn.qianlq.builder.object;
 
 public interface Item {
     String name();
+
     Packing packing();
+
     float price();
 }
