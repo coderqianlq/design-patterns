@@ -52,6 +52,13 @@
 #### 结构型模式
 
 * [适配器模式](https://github.com/coderqianlq/design-patterns/tree/master/src/cn/qianlq/adapter/readme)
+* [结构型模式](https://github.com/coderqianlq/design-patterns/tree/master/src/cn/qianlq/bridge/readme)
+
+#### 行为型模式
+
+* [策略模式]()
+
+#### J2EE 模式
 
 #### 菜鸟教程链接
 
