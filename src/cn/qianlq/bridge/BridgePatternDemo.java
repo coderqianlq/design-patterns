@@ -8,7 +8,7 @@ import cn.qianlq.bridge.object.Shape;
 /**
  * @author qianliqing
  * @date 2018-09-19 下午2:34
- * mail: 1242202279@qq.com
+ * mail: qianlq0824@gmail.com
  */
 
 public class BridgePatternDemo {

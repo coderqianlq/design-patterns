@@ -24,13 +24,14 @@ public class SingletonEhs {
 
     private static SingletonEhs instance = new SingletonEhs();
 
-    private SingletonEhs() {}
+    private SingletonEhs() {
+    }
 
     public static SingletonEhs getInstance() {
         return instance;
     }
 
-    public void showMessage(){
+    public void showMessage() {
         System.out.println("饿汉式单例");
     }
 }

@@ -7,12 +7,12 @@ package cn.qianlq.adapter.object;
 /**
  * @author qianliqing
  * @date 2018/6/8 下午8:19
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class MediaAdapter implements MediaPlayer {
 
-    AdvancedMediaPlayer advancedMediaPlayer;
+    private AdvancedMediaPlayer advancedMediaPlayer;
 
     public MediaAdapter(String audioType) {
         if (audioType.equalsIgnoreCase("vlc")) {

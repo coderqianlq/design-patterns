@@ -27,13 +27,14 @@ public class SingletonSIC {
         private static final SingletonSIC INSTANCE = new SingletonSIC();
     }
 
-    private SingletonSIC() {}
+    private SingletonSIC() {
+    }
 
     public static final SingletonSIC getInstance() {
         return SingletonHolder.INSTANCE;
     }
 
-    public void showMessage(){
+    public void showMessage() {
         System.out.println("静态内部类单例");
     }
 }

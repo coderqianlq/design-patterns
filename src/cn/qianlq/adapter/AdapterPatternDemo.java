@@ -5,7 +5,7 @@ import cn.qianlq.adapter.object.AudioPlayer;
 /**
  * @author qianliqing
  * @date 2018/6/8 下午8:32
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class AdapterPatternDemo {

@@ -41,7 +41,7 @@
 
 合成复用原则是指：尽量使用合成/聚合的方式，而不是使用继承。
 
-#### 创建形模式
+#### 创建型模式
 
 * [单例模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/singleton/readme.md)
 * [原型模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/prototype/readme.md)

@@ -15,6 +15,7 @@ public class SingleObject {
 
     /**
      * 构造函数私有化，这样该类就不会被实例化
+     *
      * @return
      */
     public static SingleObject getInstance() {
@@ -27,7 +28,7 @@ public class SingleObject {
     private SingleObject() {
     }
 
-    public void showMessage(){
+    public void showMessage() {
         System.out.println("Hello World!");
     }
 }
