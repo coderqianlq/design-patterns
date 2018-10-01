@@ -23,7 +23,8 @@ public class SingletonDCL {
      */
     private volatile static SingletonDCL instance;
 
-    private SingletonDCL() {}
+    private SingletonDCL() {
+    }
 
     public static SingletonDCL getInstance() {
         //先检查实例是否存在，如果不存在才进入下面的同步块
@@ -39,7 +40,7 @@ public class SingletonDCL {
         return instance;
     }
 
-    public void showMessage(){
+    public void showMessage() {
         System.out.println("双检锁/双重校验锁单例");
     }
 }

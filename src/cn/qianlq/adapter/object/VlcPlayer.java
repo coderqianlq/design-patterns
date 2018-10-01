@@ -3,7 +3,7 @@ package cn.qianlq.adapter.object;
 /**
  * @author qianliqing
  * @date 2018/6/8 下午8:14
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class VlcPlayer implements AdvancedMediaPlayer {

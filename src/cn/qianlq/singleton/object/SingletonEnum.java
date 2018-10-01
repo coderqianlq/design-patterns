@@ -22,7 +22,7 @@ package cn.qianlq.singleton.object;
 public enum SingletonEnum {
     INSTANCE;
 
-    public void showMessage(){
+    public void showMessage() {
         System.out.println("枚举单例");
     }
 }

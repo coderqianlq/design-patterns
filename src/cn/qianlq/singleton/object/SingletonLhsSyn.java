@@ -21,7 +21,8 @@ public class SingletonLhsSyn {
 
     private static SingletonLhsSyn instance;
 
-    private SingletonLhsSyn() {}
+    private SingletonLhsSyn() {
+    }
 
     public static synchronized SingletonLhsSyn getInstance() {
         if (instance == null) {
@@ -30,7 +31,7 @@ public class SingletonLhsSyn {
         return instance;
     }
 
-    public void showMessage(){
+    public void showMessage() {
         System.out.println("懒汉式，线程安全单例");
     }
 }

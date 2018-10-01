@@ -3,7 +3,7 @@ package cn.qianlq.bridge.object;
 /**
  * @author qianliqing
  * @date 2018-09-19 下午2:38
- * mail: 1242202279@qq.com
+ * mail: qianlq0824@gmail.com
  */
 
 public abstract class Shape {

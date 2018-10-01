@@ -8,15 +8,14 @@ package cn.qianlq.adapter.object;
 /**
  * @author qianliqing
  * @date 2018/6/8 下午8:13
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public interface MediaPlayer {
 
     /**
-     *
      * @param audioType 音频类型
      * @param fileName  文件名
      */
-    public void play(String audioType, String fileName);
+    void play(String audioType, String fileName);
 }

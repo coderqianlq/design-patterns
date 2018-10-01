@@ -19,7 +19,8 @@ public class SingletonLhsNoSyn {
 
     private static SingletonLhsNoSyn instance;
 
-    private SingletonLhsNoSyn() {}
+    private SingletonLhsNoSyn() {
+    }
 
     public static SingletonLhsNoSyn getInstance() {
         if (instance == null) {
@@ -28,7 +29,7 @@ public class SingletonLhsNoSyn {
         return instance;
     }
 
-    public void showMessage(){
+    public void showMessage() {
         System.out.println("懒汉式，线程不安全单例");
     }
 }
