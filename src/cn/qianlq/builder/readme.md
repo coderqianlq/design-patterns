@@ -43,7 +43,7 @@
 #### Android源码中的模式实现
 在 Android 源码中，我们最常用到的 Builder 模式就是 AlertDialog.Builder， 使用该 Builder 来构建复杂的 AlertDialog 对象。简单示例如下：
 
-```java``
+```java
 //显示基本的AlertDialog  
 private void showDialog(Context context) {  
     AlertDialog.Builder builder = new AlertDialog.Builder(context);  
