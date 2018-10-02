@@ -43,16 +43,17 @@
 
 #### 创建型模式
 
-* [单例模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/singleton/readme.md)
-* [原型模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/prototype/readme.md)
-* [建造者模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/builder/readme.md)
-* [工厂模式]()
-* [抽象工厂模式]()
+* [单例模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/singleton/)
+* [原型模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/prototype/)
+* [建造者模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/builder/)
+* [工厂模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/factory/)
+* [抽象工厂模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/abstractfactory/)
 
 #### 结构型模式
 
-* [适配器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/adapter/readme.md)
-* [桥接模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/bridge/readme.md)
+* [适配器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/adapter/)
+* [桥接模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/bridge/)
+* [装饰器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/decorator/)
 
 #### 行为型模式
 
