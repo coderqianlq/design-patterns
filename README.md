@@ -54,13 +54,15 @@
 * [适配器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/adapter/)
 * [桥接模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/bridge/)
 * [装饰器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/decorator/)
+* 过滤器模式
 
 #### 行为型模式
 
 * [策略模式]()
+* [观察者模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/observer/)
 
 #### J2EE 模式
 
 #### 菜鸟教程链接
 
-菜鸟教程 [http://www.runoob.com/design-pattern/design-pattern-tutorial.html](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
+[菜鸟教程](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
