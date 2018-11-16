@@ -41,3 +41,9 @@
 
 #### 注意事项
 getInstance() 方法中需要使用同步锁 synchronized (Singleton.class) 防止多线程同时进入造成 instance 被多次实例化。
+
+#### 实现
+我们将创建一个 SingleObject 类。SingleObject 类有它的私有构造函数和本身的一个静态实例。
+
+SingleObject 类提供了一个静态方法，供外界获取它的静态实例。SingletonPatternDemo，我们的演示类使用 SingleObject 类来获取 SingleObject 对象。
+![](http://www.runoob.com/wp-content/uploads/2014/08/singleton_pattern_uml_diagram.jpg)
