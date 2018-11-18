@@ -54,7 +54,9 @@
 * [适配器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/adapter/)
 * [桥接模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/bridge/)
 * [装饰器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/decorator/)
-* 过滤器模式
+* [过滤器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/filter/)
+* [组合模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/composite/)
+* [外观模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/facade/)
 
 #### 行为型模式
 
