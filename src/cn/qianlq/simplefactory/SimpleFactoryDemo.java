@@ -1,7 +1,8 @@
-package cn.qianlq.simplefactroy;
+package cn.qianlq.simplefactory;
 
 
-import cn.qianlq.simplefactroy.object.Shape;
+import cn.qianlq.simplefactory.object.Shape;
+import cn.qianlq.simplefactory.util.XMLUtil;
 
 /**
  * @author qianliqing
@@ -20,5 +21,8 @@ public class SimpleFactoryDemo {
 
         Shape square = ShapeFactory.getShape("Square");
         square.draw();
+
+        Shape shape =  ShapeFactory.getShape(XMLUtil.getChartType());
+        shape.draw();
     }
 }

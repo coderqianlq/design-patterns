@@ -1,4 +1,4 @@
-package cn.qianlq.simplefactroy.object;
+package cn.qianlq.simplefactory.object;
 
 
 /**
