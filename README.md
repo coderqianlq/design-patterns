@@ -46,6 +46,7 @@
 * [单例模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/singleton/)
 * [原型模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/prototype/)
 * [建造者模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/builder/)
+* [简单工厂模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/simplefactory/)
 * [工厂方法模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/factorymethod/)
 * [抽象工厂模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/abstractfactory/)
 
