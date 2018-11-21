@@ -1,4 +1,4 @@
-package cn.qianlq.factory.object;
+package cn.qianlq.factorymethod.object;
 
 /**
  * @author qianliqing

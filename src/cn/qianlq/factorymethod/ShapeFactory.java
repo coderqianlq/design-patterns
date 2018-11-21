@@ -1,9 +1,9 @@
-package cn.qianlq.factory;
+package cn.qianlq.factorymethod;
 
-import cn.qianlq.factory.object.Circle;
-import cn.qianlq.factory.object.Rectangle;
-import cn.qianlq.factory.object.Shape;
-import cn.qianlq.factory.object.Square;
+import cn.qianlq.factorymethod.object.Circle;
+import cn.qianlq.factorymethod.object.Rectangle;
+import cn.qianlq.factorymethod.object.Shape;
+import cn.qianlq.factorymethod.object.Square;
 
 /**
  * @author qianliqing
