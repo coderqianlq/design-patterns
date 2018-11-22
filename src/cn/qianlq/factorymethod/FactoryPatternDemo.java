@@ -5,6 +5,7 @@ import cn.qianlq.factorymethod.factory.CircleFactory;
 import cn.qianlq.factorymethod.factory.RectangleFactory;
 import cn.qianlq.factorymethod.factory.SquareFactory;
 import cn.qianlq.factorymethod.object.Shape;
+import cn.qianlq.factorymethod.util.XMLUtil;
 
 /**
  * @author qianliqing
@@ -27,5 +28,9 @@ public class FactoryPatternDemo {
         factory = new SquareFactory();
         Shape square = factory.getShape();
         square.draw();
+
+        factory = (AbstractFactory) XMLUtil.getFactory();
+        Shape shape = factory.getShape();
+        shape.draw();
     }
 }

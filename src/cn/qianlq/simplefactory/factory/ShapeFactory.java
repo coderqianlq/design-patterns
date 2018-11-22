@@ -1,4 +1,4 @@
-package cn.qianlq.simplefactory;
+package cn.qianlq.simplefactory.factory;
 
 import cn.qianlq.simplefactory.object.Circle;
 import cn.qianlq.simplefactory.object.Rectangle;

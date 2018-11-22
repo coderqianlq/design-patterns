@@ -20,4 +20,14 @@ public class CircleFactory extends AbstractFactory {
     public Shape getShape() {
         return new Circle();
     }
+
+    @Override
+    public Shape getShape(String args) {
+        return null;
+    }
+
+    @Override
+    public Shape getShape(Object obj) {
+        return null;
+    }
 }

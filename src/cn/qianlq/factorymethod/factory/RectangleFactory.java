@@ -20,4 +20,14 @@ public class RectangleFactory extends AbstractFactory {
     public Shape getShape() {
         return new Rectangle();
     }
+
+    @Override
+    public Shape getShape(String args) {
+        return null;
+    }
+
+    @Override
+    public Shape getShape(Object obj) {
+        return null;
+    }
 }

@@ -1,6 +1,7 @@
 package cn.qianlq.simplefactory;
 
 
+import cn.qianlq.simplefactory.factory.ShapeFactory;
 import cn.qianlq.simplefactory.object.Circle;
 import cn.qianlq.simplefactory.object.Shape;
 import cn.qianlq.simplefactory.util.XMLUtil;

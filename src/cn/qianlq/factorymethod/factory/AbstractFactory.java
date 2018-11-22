@@ -11,4 +11,8 @@ import cn.qianlq.factorymethod.object.Shape;
 public abstract class AbstractFactory {
 
     public abstract Shape getShape();
+
+    public abstract Shape getShape(String args);
+
+    public abstract Shape getShape(Object obj);
 }
