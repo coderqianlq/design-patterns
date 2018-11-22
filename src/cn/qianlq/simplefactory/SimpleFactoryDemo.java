@@ -1,6 +1,8 @@
 package cn.qianlq.simplefactory;
 
 
+import cn.qianlq.simplefactory.factory.ShapeFactory;
+import cn.qianlq.simplefactory.object.Circle;
 import cn.qianlq.simplefactory.object.Shape;
 import cn.qianlq.simplefactory.util.XMLUtil;
 
@@ -23,6 +25,9 @@ public class SimpleFactoryDemo {
         square.draw();
 
         Shape shape =  ShapeFactory.getShape(XMLUtil.getChartType());
+        shape.draw();
+
+        shape = ShapeFactory.getClass(Circle.class);
         shape.draw();
     }
 }

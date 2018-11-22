@@ -1,8 +1,11 @@
 package cn.qianlq.factorymethod;
 
-import cn.qianlq.factorymethod.object.Rectangle;
+import cn.qianlq.factorymethod.factory.AbstractFactory;
+import cn.qianlq.factorymethod.factory.CircleFactory;
+import cn.qianlq.factorymethod.factory.RectangleFactory;
+import cn.qianlq.factorymethod.factory.SquareFactory;
 import cn.qianlq.factorymethod.object.Shape;
-import cn.qianlq.factorymethod.object.Square;
+import cn.qianlq.factorymethod.util.XMLUtil;
 
 /**
  * @author qianliqing
@@ -11,31 +14,23 @@ import cn.qianlq.factorymethod.object.Square;
  */
 
 public class FactoryPatternDemo {
+
     public static void main(String[] args) {
-        ShapeFactory shapeFactory = new ShapeFactory();
+        AbstractFactory factory;
+        factory = new CircleFactory();
+        Shape circle = factory.getShape();
+        circle.draw();
 
-        //获取 Circle 的对象，并调用它的 draw 方法
-        Shape shape1 = shapeFactory.getShape("CIRCLE");
+        factory = new RectangleFactory();
+        Shape rectangle = factory.getShape();
+        rectangle.draw();
 
-        //调用 Circle 的 draw 方法
-        shape1.draw();
-
-        //获取 Rectangle 的对象，并调用它的 draw 方法
-        Shape shape2 = shapeFactory.getShape("RECTANGLE");
-
-        //调用 Rectangle 的 draw 方法
-        shape2.draw();
-
-        //获取 Square 的对象，并调用它的 draw 方法
-        Shape shape3 = shapeFactory.getShape("SQUARE");
-
-        //调用 Square 的 draw 方法
-        shape3.draw();
-
-        Rectangle rect = ShapeFactory.getClass(Rectangle.class);
-        rect.draw();
-
-        Square square = ShapeFactory.getClass(Square.class);
+        factory = new SquareFactory();
+        Shape square = factory.getShape();
         square.draw();
+
+        factory = (AbstractFactory) XMLUtil.getFactory();
+        Shape shape = factory.getShape();
+        shape.draw();
     }
 }
