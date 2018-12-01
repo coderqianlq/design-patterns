@@ -1,6 +1,10 @@
 package cn.qianlq.builder;
 
-import cn.qianlq.builder.object.*;
+import cn.qianlq.builder.meal.Meal;
+import cn.qianlq.builder.meal.burger.ChickenBurger;
+import cn.qianlq.builder.meal.burger.VegBurger;
+import cn.qianlq.builder.meal.drink.Coke;
+import cn.qianlq.builder.meal.drink.Pepsi;
 
 /**
  * @author qianliqing
@@ -8,7 +12,9 @@ import cn.qianlq.builder.object.*;
  * email: qianlq0824@gmail.com
  */
 
-public class MealBuilder {
+public class MealBuilder extends AbstractBuilder {
+
+    private Meal meal = new Meal();
 
     public Meal prepareVegMeal() {
         Meal meal = new Meal();
@@ -22,5 +28,30 @@ public class MealBuilder {
         meal.addItem(new ChickenBurger());
         meal.addItem(new Pepsi());
         return meal;
+    }
+
+    @Override
+    public void prepareBurger() {
+        meal.addItem(new VegBurger());
+    }
+
+    @Override
+    public void prepareDrink() {
+        meal.addItem(new Coke());
+    }
+
+    @Override
+    public Meal prepareMeal() {
+        return meal;
+    }
+
+    @Override
+    public void noDirectorPrepareBurger() {
+        noDirectorMeal.addItem(new VegBurger());
+    }
+
+    @Override
+    public void noDirectorPrepareDrink() {
+        noDirectorMeal.addItem(new Coke());
     }
 }

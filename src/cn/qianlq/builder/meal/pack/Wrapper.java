@@ -1,4 +1,4 @@
-package cn.qianlq.builder.object;
+package cn.qianlq.builder.meal.pack;
 
 /**
  * @author qianliqing

@@ -1,4 +1,8 @@
-package cn.qianlq.builder.object;
+package cn.qianlq.builder.meal.drink;
+
+import cn.qianlq.builder.meal.pack.Bottle;
+import cn.qianlq.builder.meal.Item;
+import cn.qianlq.builder.meal.pack.Packing;
 
 /**
  * @author qianliqing

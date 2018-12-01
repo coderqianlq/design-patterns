@@ -1,4 +1,4 @@
-package cn.qianlq.builder.object;
+package cn.qianlq.builder.meal.burger;
 
 /**
  * @author qianliqing
@@ -6,15 +6,15 @@ package cn.qianlq.builder.object;
  * email: qianlq0824@gmail.com
  */
 
-public class ChickenBurger extends Burger {
+public class VegBurger extends Burger {
 
     @Override
     public float price() {
-        return 50.0f;
+        return 25.0f;
     }
 
     @Override
     public String name() {
-        return "Chicken Burger";
+        return "Veg Burger";
     }
 }
