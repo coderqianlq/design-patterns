@@ -1,6 +1,6 @@
 package cn.qianlq.builder;
 
-import cn.qianlq.builder.object.Meal;
+import cn.qianlq.builder.meal.Meal;
 
 /**
  * @author qianliqing
@@ -9,11 +9,26 @@ import cn.qianlq.builder.object.Meal;
  */
 
 public class BuilderPatternDemo {
+
     public static void main(String[] args) {
+        MealDirector director = new MealDirector();
+        MealBuilder builder = new MealBuilder();
+
+        director.setBuilder(builder);
+        Meal meal = builder.prepareMeal();
+        meal.showItems();
+        System.out.println("Total Cost: " + meal.getCost());
+
+        AbstractBuilder.prepareMeal(builder);
+        Meal noDirectorMeal = AbstractBuilder.noDirectorMeal;
+        System.out.println("\n");
+        noDirectorMeal.showItems();
+        System.out.println("Total Cost: " + noDirectorMeal.getCost());
+
         MealBuilder mealBuilder = new MealBuilder();
 
         Meal vegMeal = mealBuilder.prepareVegMeal();
-        System.out.println("Veg Meal");
+        System.out.println("\n\nVeg Meal");
         vegMeal.showItems();
         System.out.println("Total Cost: " + vegMeal.getCost());
 

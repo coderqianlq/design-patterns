@@ -1,4 +1,6 @@
-package cn.qianlq.builder.object;
+package cn.qianlq.builder.meal;
+
+import cn.qianlq.builder.meal.pack.Packing;
 
 /**
  * @author qianliqing
