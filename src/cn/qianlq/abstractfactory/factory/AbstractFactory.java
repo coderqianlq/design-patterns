@@ -14,6 +14,8 @@ import cn.qianlq.abstractfactory.object.shape.Shape;
  */
 
 public abstract class AbstractFactory {
-    public abstract Color getColor(String color);
-    public abstract Shape getShape(String shape) ;
+
+    public abstract Color getColor();
+
+    public abstract Shape getShape();
 }
