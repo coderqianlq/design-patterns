@@ -1,6 +1,9 @@
 package cn.qianlq.prototype;
 
+import cn.qianlq.prototype.object.Circle;
 import cn.qianlq.prototype.object.Shape;
+
+import java.io.*;
 
 /**
  * 与通过对一个类进行实例化来构造新对象不同的是，原型模式是通过拷贝一个现有对象生成新对象的。
@@ -14,6 +17,7 @@ import cn.qianlq.prototype.object.Shape;
  */
 
 public class PrototypePatternDemo {
+
     public static void main(String[] args) {
         ShapeCache.loadCache();
 
@@ -25,5 +29,24 @@ public class PrototypePatternDemo {
 
         Shape clonedShape3 = ShapeCache.getShape("3");
         System.out.println("Shape : " + clonedShape3.getType());
+
+        Circle circle = new Circle();
+
+        Circle clonedCircle;
+        try {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(baos);
+            oos.writeObject(circle);
+            oos.close();
+
+            ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
+            ObjectInputStream ois = new ObjectInputStream(bais);
+            clonedCircle = (Circle) ois.readObject();
+            ois.close();
+
+            System.out.println("clone type: " + clonedCircle.getType());
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
