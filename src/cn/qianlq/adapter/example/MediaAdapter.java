@@ -1,4 +1,4 @@
-package cn.qianlq.adapter.object;
+package cn.qianlq.adapter.example;
 
 /**
  * 创建实现了 MediaPlayer 接口的适配器类

@@ -1,4 +1,4 @@
-package cn.qianlq.adapter.object;
+package cn.qianlq.adapter.example;
 
 /**
  * @author qianliqing
