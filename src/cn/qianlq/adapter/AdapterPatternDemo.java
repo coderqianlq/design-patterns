@@ -1,6 +1,11 @@
 package cn.qianlq.adapter;
 
-import cn.qianlq.adapter.object.AudioPlayer;
+import cn.qianlq.adapter.example.AudioPlayer;
+import cn.qianlq.adapter.object.Adaptee;
+import cn.qianlq.adapter.object.Mp4Adaptee;
+import cn.qianlq.adapter.object.Adapter;
+import cn.qianlq.adapter.object.VlcAdaptee;
+import cn.qianlq.adapter.util.XMLUtil;
 
 /**
  * @author qianliqing
@@ -11,6 +16,17 @@ import cn.qianlq.adapter.object.AudioPlayer;
 public class AdapterPatternDemo {
 
     public static void main(String[] args) {
+        Adaptee adaptee = new Mp4Adaptee();
+        Adapter adapter = new Adapter(adaptee);
+        adapter.play();
+
+        adaptee = new VlcAdaptee();
+        adapter = new Adapter(adaptee);
+        adapter.play();
+
+        Adaptee vlcAdaptee = (Adaptee) XMLUtil.getAdaptee();
+        vlcAdaptee.playMusic();
+
         AudioPlayer audioPlayer = new AudioPlayer();
 
         audioPlayer.play("mp3", "beyond the horizon.mp3");
