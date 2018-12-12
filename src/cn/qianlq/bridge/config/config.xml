@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+    <shape>cn.qianlq.bridge.object.Circle</shape>
+    <color>cn.qianlq.bridge.object.Green</color>
+</config>

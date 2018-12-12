@@ -2,16 +2,16 @@ package cn.qianlq.bridge.object;
 
 /**
  * @author qianliqing
- * @date 2018-09-19 下午2:38
- * mail: qianlq0824@gmail.com
+ * @date 2018/12/11 5:24 PM
+ * email: qianliqing@hyperchain.com
  */
 
 public abstract class Shape {
 
-    protected DrawAPI drawAPI;
+    protected ColorAPI colorAPI;
 
-    protected Shape(DrawAPI drawAPI) {
-        this.drawAPI = drawAPI;
+    public Shape(ColorAPI colorAPI) {
+        this.colorAPI = colorAPI;
     }
 
     public abstract void draw();
