@@ -1,13 +1,13 @@
 package cn.qianlq.bridge;
 
 import cn.qianlq.bridge.example.Circle;
+import cn.qianlq.bridge.example.GreenCircle;
+import cn.qianlq.bridge.example.RedCircle;
 import cn.qianlq.bridge.example.Shape;
 import cn.qianlq.bridge.object.ColorAPI;
 import cn.qianlq.bridge.object.Green;
 import cn.qianlq.bridge.object.Red;
-import cn.qianlq.bridge.example.GreenCircle;
-import cn.qianlq.bridge.example.RedCircle;
-import cn.qianlq.bridge.util.XMLUtil;
+import cn.util.XMLUtil;
 
 import java.lang.reflect.Constructor;
 
@@ -25,10 +25,10 @@ public class BridgePatternDemo {
         shape = new cn.qianlq.bridge.object.Rectangle(new Green());
         shape.draw();
 
-        Class clazz = XMLUtil.getClass("shape");
+        Class clazz = XMLUtil.getClass("src/cn/qianlq/bridge/config/config.xml", "shape");
         Constructor constructor = clazz.getConstructor(ColorAPI.class);
 
-        cn.qianlq.bridge.object.Shape circle = (cn.qianlq.bridge.object.Shape) constructor.newInstance((ColorAPI) XMLUtil.getClass("color").newInstance());
+        cn.qianlq.bridge.object.Shape circle = (cn.qianlq.bridge.object.Shape) constructor.newInstance((ColorAPI) XMLUtil.getObejct("src/cn/qianlq/bridge/config/config.xml", "color"));
         circle.draw();
 
         Shape redCircle = new Circle(100, 100, 10, new RedCircle());

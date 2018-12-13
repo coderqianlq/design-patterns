@@ -4,7 +4,7 @@ package cn.qianlq.simplefactory;
 import cn.qianlq.simplefactory.factory.ShapeFactory;
 import cn.qianlq.simplefactory.object.Circle;
 import cn.qianlq.simplefactory.object.Shape;
-import cn.qianlq.simplefactory.util.XMLUtil;
+import cn.util.XMLUtil;
 
 /**
  * @author qianliqing
@@ -24,7 +24,7 @@ public class SimpleFactoryDemo {
         Shape square = ShapeFactory.getShape("Square");
         square.draw();
 
-        Shape shape =  ShapeFactory.getShape(XMLUtil.getChartType());
+        Shape shape = ShapeFactory.getShape(XMLUtil.getBean("src/cn/qianlq/simplefactory/config/config.xml", "shapeType"));
         shape.draw();
 
         shape = ShapeFactory.getClass(Circle.class);
