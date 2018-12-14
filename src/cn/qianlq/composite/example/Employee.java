@@ -1,4 +1,4 @@
-package cn.qianlq.composite.object;
+package cn.qianlq.composite.example;
 
 import java.util.ArrayList;
 import java.util.List;

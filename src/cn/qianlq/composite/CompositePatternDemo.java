@@ -1,7 +1,11 @@
 package cn.qianlq.composite;
 
-import cn.qianlq.composite.object.Employee;
+import cn.qianlq.composite.object.Component;
+import cn.qianlq.composite.object.Composite;
+import cn.qianlq.composite.example.Employee;
+import cn.qianlq.composite.object.Leaf;
 
+import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -15,6 +19,51 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class CompositePatternDemo {
 
     public static void main(String[] args) {
+        Component root, componentA, componentB, leafA1, leafA2, leafA3, leafB1, leafB2, leafOfRoot;
+
+        root = new Composite("root");
+
+        leafOfRoot = new Leaf("leafOfRoot");
+        componentA = new Composite("componentA");
+        componentB = new Composite("componentB");
+        root.add(componentA);
+        root.add(componentB);
+        root.add(leafOfRoot);
+
+        leafA1 = new Leaf("leafA1");
+        leafA2 = new Leaf("leafA2");
+        leafA3 = new Leaf("leafA3");
+        componentA.add(leafA1);
+        componentA.add(leafA2);
+        componentA.add(leafA3);
+
+        leafB1 = new Leaf("leafB1");
+        leafB2 = new Leaf("leafB2");
+        componentB.add(leafB1);
+        componentB.add(leafB2);
+
+        componentA.getChild(1);
+        componentA.remove(leafA3);
+
+        leafB2.add(leafA1);
+
+        System.out.println();
+        root.print();
+        for (Component first : root.getChild()) {
+            first.print();
+            List<Component> child = first.getChild();
+            if (child == null) {
+                continue;
+            }
+            for (Component second : child) {
+                second.print();
+            }
+        }
+
+        System.out.println();
+        root.println();
+        System.out.println();
+
         Employee CEO = new Employee("John", "CEO", 30000);
 
         Employee headSales = new Employee("Robert", "Head Sales", 20000);
