@@ -1,9 +1,6 @@
 package cn.qianlq.decorator;
 
-import cn.qianlq.decorator.object.Circle;
-import cn.qianlq.decorator.object.Rectangle;
-import cn.qianlq.decorator.object.RedShapeDecorator;
-import cn.qianlq.decorator.object.Shape;
+import cn.qianlq.decorator.object.*;
 
 /**
  * @author qianliqing
@@ -17,9 +14,9 @@ public class DecoratorPatternDemo {
 
         Shape circle = new Circle();
 
-        Shape redCircle = new RedShapeDecorator(new Circle());
+        Shape redCircle = new RedBorderDecorator(circle);
 
-        Shape redRectangle = new RedShapeDecorator(new Rectangle());
+        Shape redRectangle = new RedBorderDecorator(new Rectangle());
         System.out.println("Circle with normal border");
         circle.draw();
 
@@ -28,5 +25,13 @@ public class DecoratorPatternDemo {
 
         System.out.println("\nRectangle of red border");
         redRectangle.draw();
+
+        System.out.println("\nCircle of red border and red padding");
+        Shape fillRedCircle = new RedFillDecorator(redCircle);
+        fillRedCircle.draw();
+
+        System.out.println("\nRectangle of red border and green padding");
+        Shape fillGreenRectangle = new GreenFillDecorator((RedBorderDecorator) redRectangle);
+        fillGreenRectangle.draw();
     }
 }
