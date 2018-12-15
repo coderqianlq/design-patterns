@@ -6,19 +6,19 @@ package cn.qianlq.decorator.object;
  * mail: qianlq0824@gmail.com
  */
 
-public class RedShapeDecorator extends ShapeDecorator {
+public class RedBorderDecorator extends ShapeDecorator {
 
-    public RedShapeDecorator(Shape decoratedShape) {
+    public RedBorderDecorator(Shape decoratedShape) {
         super(decoratedShape);
     }
 
     @Override
     public void draw() {
         decoratedShape.draw();
-        setRedBorder(decoratedShape);
+        setRedBorder();
     }
 
-    private void setRedBorder(Shape decoratedShape) {
+    private void setRedBorder() {
         System.out.println("Border Color: Red");
     }
 }
