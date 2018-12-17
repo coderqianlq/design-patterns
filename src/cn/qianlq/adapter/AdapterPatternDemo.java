@@ -1,10 +1,7 @@
 package cn.qianlq.adapter;
 
 import cn.qianlq.adapter.example.AudioPlayer;
-import cn.qianlq.adapter.object.Adaptee;
-import cn.qianlq.adapter.object.Mp4Adaptee;
-import cn.qianlq.adapter.object.Adapter;
-import cn.qianlq.adapter.object.VlcAdaptee;
+import cn.qianlq.adapter.object.*;
 import cn.util.XMLUtil;
 
 /**
@@ -17,12 +14,12 @@ public class AdapterPatternDemo {
 
     public static void main(String[] args) {
         Adaptee adaptee = new Mp4Adaptee();
-        Adapter adapter = new Adapter(adaptee);
-        adapter.play();
+        Target target = new Adapter(adaptee);
+        target.play();
 
         adaptee = new VlcAdaptee();
-        adapter = new Adapter(adaptee);
-        adapter.play();
+        target = new Adapter(adaptee);
+        target.play();
 
         Adaptee vlcAdaptee = (Adaptee) XMLUtil.getObejct("src/cn/qianlq/adapter/config/config.xml", "adapteeType");
         vlcAdaptee.playMusic();
