@@ -17,6 +17,12 @@ public class ShapeMaker {
         square = new Square();
     }
 
+    public void drawAll() {
+        circle.draw();
+        rectangle.draw();
+        square.draw();
+    }
+
     public void drawCircle() {
         circle.draw();
     }
