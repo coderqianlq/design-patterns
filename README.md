@@ -58,6 +58,7 @@
 * [过滤器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/filter/)
 * [组合模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/composite/)
 * [外观模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/facade/)
+* [享元模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/flyweight/)
 
 #### 行为型模式
 
