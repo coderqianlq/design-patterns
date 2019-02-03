@@ -5,7 +5,7 @@ import cn.qianlq.factorymethod.object.Shape;
 /**
  * @author qianliqing
  * @date 2018/11/22 1:58 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public abstract class AbstractFactory {

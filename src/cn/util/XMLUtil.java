@@ -11,7 +11,7 @@ import java.io.File;
 /**
  * @author qianliqing
  * @date 2018/12/13 2:43 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class XMLUtil {

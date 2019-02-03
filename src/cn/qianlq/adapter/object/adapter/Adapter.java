@@ -8,7 +8,7 @@ import cn.qianlq.adapter.object.Target;
  *
  * @author qianliqing
  * @date 2018/12/11 10:16 AM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class Adapter extends Mp4Adaptee implements Target {

@@ -5,7 +5,7 @@ package cn.qianlq.adapter.object;
  *
  * @author qianliqing
  * @date 2018/12/10 8:24 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class Adapter implements Target {
