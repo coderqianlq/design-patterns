@@ -3,7 +3,7 @@ package cn.qianlq.adapter.object;
 /**
  * @author qianliqing
  * @date 2018/12/10 8:31 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class VlcAdaptee extends Adaptee {

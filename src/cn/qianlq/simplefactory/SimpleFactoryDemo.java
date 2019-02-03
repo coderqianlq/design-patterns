@@ -9,7 +9,7 @@ import cn.util.XMLUtil;
 /**
  * @author qianliqing
  * @date 2018/11/21 4:43 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class SimpleFactoryDemo {

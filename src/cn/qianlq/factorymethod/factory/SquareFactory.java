@@ -6,7 +6,7 @@ import cn.qianlq.factorymethod.object.Square;
 /**
  * @author qianliqing
  * @date 2018/11/22 2:04 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class SquareFactory extends AbstractFactory {

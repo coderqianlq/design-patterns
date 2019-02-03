@@ -8,7 +8,7 @@ import cn.qianlq.simplefactory.object.Square;
 /**
  * @author qianliqing
  * @date 2018/11/21 4:41 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 public class ShapeFactory {
