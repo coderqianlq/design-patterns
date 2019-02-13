@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<config>
-    <!-- 具体工厂类的全限定名 -->
-    <className>cn.qianlq.factorymethod.factory.RectangleFactory</className>
-</config>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+    <shape>com.coderqian.bridge.object.Circle</shape>
+    <color>com.coderqian.bridge.object.Green</color>
+</config>
