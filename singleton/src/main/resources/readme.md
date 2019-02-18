@@ -316,7 +316,7 @@ Exception in thread "main" java.lang.NoSuchMethodException: cn.qianlq.singleton.
 枚举类的实质：<br/>
 ![](image/枚举类实质图.png)
 
-#### 模式总结
+### 模式总结
 
 单例模式作为一种目标明确、结构简单、理解容易的设计模式，在软件开发中使用频率相当高，在很多应用软件和框架中都得以广泛应用。
 
