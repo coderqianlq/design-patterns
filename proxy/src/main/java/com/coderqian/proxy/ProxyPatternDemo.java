@@ -1,5 +1,6 @@
 package com.coderqian.proxy;
 
+import com.coderqian.proxy.example.CglibProxy;
 import com.coderqian.proxy.example.JdkProxy;
 import com.coderqian.proxy.object.RealSubject;
 import com.coderqian.proxy.object.Subject;
@@ -23,8 +24,8 @@ public class ProxyPatternDemo {
         Subject jdkSubject = jdkProxy.newProxy(realSubject);
         jdkSubject.request();
 
-//        CglibProxy cglibProxy = new CglibProxy();
-//        Subject cglibSubject = cglibProxy.createProxyObject(realSubject);
-//        cglibSubject.request();
+        CglibProxy cglibProxy = new CglibProxy();
+        Subject cglibSubject = (Subject) cglibProxy.createProxyObject(realSubject);
+        cglibSubject.request();
     }
 }
