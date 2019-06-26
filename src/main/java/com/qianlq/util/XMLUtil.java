@@ -1,4 +1,4 @@
-package com.coderqian.util;
+package com.qianlq.util;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
