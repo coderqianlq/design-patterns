@@ -1,4 +1,4 @@
-package com.coderqian;
+package com.qianlq;
 
 public class Main {
 
