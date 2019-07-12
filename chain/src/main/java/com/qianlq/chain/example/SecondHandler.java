@@ -1,15 +1,15 @@
-package com.qianlq.chain.object;
+package com.qianlq.chain.example;
 
 /**
  * @author qianliqing
- * @date 2019-06-28 11:50 PM
+ * @date 2019-06-28 11:51 PM
  * mail: qianlq0824@gmail.com
  */
 
-public class FirstHandler extends Handler {
+public class SecondHandler extends Handler {
 
     private void handle(String request) {
-        System.out.println("First Handle... " + request);
+        System.out.println("Second Handle... " + request);
     }
 
     @Override
@@ -18,4 +18,3 @@ public class FirstHandler extends Handler {
         this.nextHandler.handleRequest(request);
     }
 }
-

@@ -1,4 +1,4 @@
-package com.qianlq.chain.object;
+package com.qianlq.chain.example;
 
 /**
  * @author qianliqing
@@ -8,18 +8,12 @@ package com.qianlq.chain.object;
 
 public abstract class Handler {
 
-    /**
-     * 保持下一级元素的引用
-     */
+    // 保持下一级元素的引用
     protected Handler nextHandler;
 
     public void setNextHandler(Handler nextHandler) {
         this.nextHandler = nextHandler;
     }
 
-    /**
-     *
-     * @param request 请求信息
-     */
     public abstract void handleRequest(String request);
 }

@@ -1,4 +1,4 @@
-package com.qianlq.chain.object;
+package com.qianlq.chain.example;
 
 /**
  * @author qianliqing

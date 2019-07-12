@@ -1,9 +1,9 @@
 package com.qianlq.chain;
 
-import com.qianlq.chain.object.FirstHandler;
-import com.qianlq.chain.object.Handler;
-import com.qianlq.chain.object.SecondHandler;
-import com.qianlq.chain.object.ThirdHandler;
+import com.qianlq.chain.example.FirstHandler;
+import com.qianlq.chain.example.Handler;
+import com.qianlq.chain.example.SecondHandler;
+import com.qianlq.chain.example.ThirdHandler;
 
 /**
  * @author qianliqing
