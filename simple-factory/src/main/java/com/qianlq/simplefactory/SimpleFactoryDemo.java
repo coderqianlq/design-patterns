@@ -23,7 +23,7 @@ public class SimpleFactoryDemo {
         Shape square = ShapeFactory.getShape("Square");
         square.draw();
 
-        Shape shape = ShapeFactory.getShape(XMLUtil.getBean("simple-factory/src/main/java/com/coderqian/simplefactory/config/config.xml", "shapeType"));
+        Shape shape = ShapeFactory.getShape(XMLUtil.getBean("simple-factory/src/main/java/com/qianlq/simplefactory/config/config.xml", "shapeType"));
         shape.draw();
 
         shape = ShapeFactory.getClass(Circle.class);

@@ -29,7 +29,7 @@ public class FactoryPatternDemo {
         Shape square = factory.getShape();
         square.draw();
 
-        factory = (AbstractFactory) XMLUtil.getObject("factory-method/src/main/java/com/coderqian/factorymethod/config/config.xml", "className");
+        factory = (AbstractFactory) XMLUtil.getObject("factory-method/src/main/java/com/qianlq/factorymethod/config/config.xml", "className");
         Shape shape = factory.getShape();
         shape.draw();
     }
