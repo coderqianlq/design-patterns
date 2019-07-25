@@ -21,7 +21,7 @@ public class AdapterPatternDemo {
         target = new Adapter(adaptee);
         target.play();
 
-        Adaptee vlcAdaptee = (Adaptee) XMLUtil.getObject("adapter/src/main/java/com/coderqian/adapter/config/config.xml", "adapteeType");
+        Adaptee vlcAdaptee = (Adaptee) XMLUtil.getObject("adapter/src/main/java/com/qianlq/adapter/config/config.xml", "adapteeType");
         vlcAdaptee.playMusic();
 
         AudioPlayer audioPlayer = new AudioPlayer();
