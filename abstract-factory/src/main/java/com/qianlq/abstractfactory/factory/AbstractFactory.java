@@ -1,7 +1,7 @@
 package com.qianlq.abstractfactory.factory;
 
-import com.qianlq.abstractfactory.object.color.Color;
-import com.qianlq.abstractfactory.object.shape.Shape;
+import com.qianlq.abstractfactory.demo.color.Color;
+import com.qianlq.abstractfactory.demo.shape.Shape;
 
 /**
  * 为 Color 和 Shape 对象创建抽象类来获取工厂。

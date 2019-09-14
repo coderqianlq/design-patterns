@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+    <!-- 具体策略的全限定名 -->
+    <className>com.qianlq.strategy.demo.ConcreteStrategyB</className>
+</config>

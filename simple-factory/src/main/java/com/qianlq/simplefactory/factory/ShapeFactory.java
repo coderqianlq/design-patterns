@@ -1,9 +1,9 @@
 package com.qianlq.simplefactory.factory;
 
-import com.qianlq.simplefactory.object.Circle;
-import com.qianlq.simplefactory.object.Rectangle;
-import com.qianlq.simplefactory.object.Shape;
-import com.qianlq.simplefactory.object.Square;
+import com.qianlq.simplefactory.demo.Circle;
+import com.qianlq.simplefactory.demo.Rectangle;
+import com.qianlq.simplefactory.demo.Shape;
+import com.qianlq.simplefactory.demo.Square;
 
 /**
  * @author qianliqing

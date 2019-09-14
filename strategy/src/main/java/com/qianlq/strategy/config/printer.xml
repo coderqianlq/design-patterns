@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <!-- 具体策略的全限定名 -->
+    <inStrategy>0</inStrategy>
+    <classNames>
+        <className>com.qianlq.strategy.example.printer.CanonPrinter</className>
+        <className>com.qianlq.strategy.example.printer.HpPrinter</className>
+    </classNames>
+</config>

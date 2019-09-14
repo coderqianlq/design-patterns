@@ -27,6 +27,7 @@
         <module>command</module>
         <module>filter</module>
         <module>observer</module>
+        <module>strategy</module>
     </modules>
 
     <build>
@@ -38,6 +39,13 @@
                     <source>8</source>
                     <target>8</target>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

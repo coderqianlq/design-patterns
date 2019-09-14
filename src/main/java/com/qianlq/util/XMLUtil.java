@@ -7,6 +7,8 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author qianliqing
@@ -50,6 +52,26 @@ public class XMLUtil {
             Class clazz = getClass(path, tag);
             Object obj = clazz.newInstance();
             return obj;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static List<String> getBeanList(String path, String tag) {
+        try {
+            // 创建文档对象
+            DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = dFactory.newDocumentBuilder();
+            Document doc;
+            doc = builder.parse(new File(path));
+            // 获取包含图表类型的文本节点
+            NodeList nl = doc.getElementsByTagName(tag);
+            List<String> beanList = new ArrayList<>(nl.getLength());
+            for (int i = 0; i < nl.getLength(); ++i) {
+                beanList.add(nl.item(i).getFirstChild().getNodeValue().trim());
+            }
+            return beanList;
         } catch (Exception e) {
             e.printStackTrace();
             return null;

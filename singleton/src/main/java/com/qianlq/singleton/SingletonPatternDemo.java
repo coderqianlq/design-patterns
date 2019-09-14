@@ -1,6 +1,6 @@
 package com.qianlq.singleton;
 
-import com.qianlq.singleton.object.*;
+import com.qianlq.singleton.demo.*;
 
 /**
  * @author qianliqing
