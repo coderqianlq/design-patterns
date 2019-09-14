@@ -1,8 +1,8 @@
 package com.qianlq.simplefactory;
 
 import com.qianlq.simplefactory.factory.ShapeFactory;
-import com.qianlq.simplefactory.object.Circle;
-import com.qianlq.simplefactory.object.Shape;
+import com.qianlq.simplefactory.demo.Circle;
+import com.qianlq.simplefactory.demo.Shape;
 import com.qianlq.util.XMLUtil;
 
 /**

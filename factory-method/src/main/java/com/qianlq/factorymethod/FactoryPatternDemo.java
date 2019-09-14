@@ -4,7 +4,7 @@ import com.qianlq.factorymethod.factory.AbstractFactory;
 import com.qianlq.factorymethod.factory.CircleFactory;
 import com.qianlq.factorymethod.factory.RectangleFactory;
 import com.qianlq.factorymethod.factory.SquareFactory;
-import com.qianlq.factorymethod.object.Shape;
+import com.qianlq.factorymethod.demo.Shape;
 import com.qianlq.util.XMLUtil;
 
 /**

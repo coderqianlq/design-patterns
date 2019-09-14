@@ -1,7 +1,7 @@
 package com.qianlq.singleton.reflection;
 
-import com.qianlq.singleton.object.SingletonEhs;
-import com.qianlq.singleton.object.SingletonEnum;
+import com.qianlq.singleton.demo.SingletonEhs;
+import com.qianlq.singleton.demo.SingletonEnum;
 
 import java.lang.reflect.Constructor;
 

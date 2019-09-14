@@ -1,9 +1,9 @@
 package com.qianlq.abstractfactory.factory;
 
-import com.qianlq.abstractfactory.object.color.Blue;
-import com.qianlq.abstractfactory.object.color.Color;
-import com.qianlq.abstractfactory.object.shape.Circle;
-import com.qianlq.abstractfactory.object.shape.Shape;
+import com.qianlq.abstractfactory.demo.color.Blue;
+import com.qianlq.abstractfactory.demo.color.Color;
+import com.qianlq.abstractfactory.demo.shape.Circle;
+import com.qianlq.abstractfactory.demo.shape.Shape;
 
 /**
  * @author qianliqing

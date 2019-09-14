@@ -27,6 +27,7 @@
         <module>command</module>
         <module>filter</module>
         <module>observer</module>
+        <module>strategy</module>
     </modules>
 
     <build>

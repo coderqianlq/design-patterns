@@ -1,6 +1,6 @@
 package com.qianlq.factorymethod.factory;
 
-import com.qianlq.factorymethod.object.Shape;
+import com.qianlq.factorymethod.demo.Shape;
 
 /**
  * @author qianliqing
