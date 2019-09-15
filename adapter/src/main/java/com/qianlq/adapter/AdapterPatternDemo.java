@@ -1,7 +1,7 @@
 package com.qianlq.adapter;
 
 import com.qianlq.adapter.example.AudioPlayer;
-import com.qianlq.adapter.object.*;
+import com.qianlq.adapter.demo.*;
 import com.qianlq.util.XMLUtil;
 
 /**

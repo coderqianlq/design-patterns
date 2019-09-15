@@ -1,4 +1,4 @@
-package com.qianlq.bridge.object;
+package com.qianlq.bridge.demo;
 
 /**
  * @author qianliqing

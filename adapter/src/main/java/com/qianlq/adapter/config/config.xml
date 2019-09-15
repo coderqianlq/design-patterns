@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <config>
-    <adapteeType>com.qianlq.adapter.object.VlcAdaptee</adapteeType>
+    <adapteeType>com.qianlq.adapter.demo.VlcAdaptee</adapteeType>
 </config>
