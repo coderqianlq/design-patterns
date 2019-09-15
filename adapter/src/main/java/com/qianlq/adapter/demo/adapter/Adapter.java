@@ -1,7 +1,7 @@
-package com.qianlq.adapter.object.adapter;
+package com.qianlq.adapter.demo.adapter;
 
-import com.qianlq.adapter.object.Mp4Adaptee;
-import com.qianlq.adapter.object.Target;
+import com.qianlq.adapter.demo.Mp4Adaptee;
+import com.qianlq.adapter.demo.Target;
 
 /**
  * 类适配器模式

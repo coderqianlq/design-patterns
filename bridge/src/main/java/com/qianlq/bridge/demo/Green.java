@@ -1,4 +1,4 @@
-package com.qianlq.bridge.object;
+package com.qianlq.bridge.demo;
 
 /**
  * @author qianliqing
@@ -6,10 +6,10 @@ package com.qianlq.bridge.object;
  * email: qianlq0824@gmail.com
  */
 
-public class Red implements ColorAPI {
+public class Green implements ColorAPI {
 
     @Override
     public void drawColor() {
-        System.out.println("tint red.");
+        System.out.println("tint green.");
     }
 }

@@ -28,6 +28,7 @@
         <module>filter</module>
         <module>observer</module>
         <module>strategy</module>
+        <module>template-method</module>
     </modules>
 
     <build>
