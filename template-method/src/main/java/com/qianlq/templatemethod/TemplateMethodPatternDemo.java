@@ -1,5 +1,8 @@
 package com.qianlq.templatemethod;
 
+import com.qianlq.templatemethod.demo.AbstractTemplate;
+import com.qianlq.templatemethod.demo.ConcreteDoB;
+
 /**
  * @author qianliqing
  * @date 2019-09-14 18:48
@@ -9,6 +12,7 @@ package com.qianlq.templatemethod;
 public class TemplateMethodPatternDemo {
 
     public static void main(String[] args) {
-
+        AbstractTemplate doB = new ConcreteDoB();
+        doB.templateMethod();
     }
 }
