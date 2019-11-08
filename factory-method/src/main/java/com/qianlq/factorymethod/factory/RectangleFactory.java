@@ -14,7 +14,7 @@ public class RectangleFactory extends AbstractFactory {
     /**
      * 返回具体的 Rectangle 实例
      *
-     * @return
+     * @return Shape
      */
     @Override
     public Shape getShape() {

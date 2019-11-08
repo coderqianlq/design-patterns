@@ -14,7 +14,7 @@ public class CircleFactory extends AbstractFactory {
     /**
      * 返回具体的 Circle 实例
      *
-     * @return
+     * @return Shape
      */
     @Override
     public Shape getShape() {

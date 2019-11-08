@@ -14,7 +14,7 @@ public class SquareFactory extends AbstractFactory {
     /**
      * 返回具体的 Square 实例
      *
-     * @return
+     * @return Shape
      */
     @Override
     public Shape getShape() {

@@ -17,11 +17,11 @@ public class ShapeFactory {
         if (shapeType == null) {
             return null;
         }
-        if (shapeType.equalsIgnoreCase("CIRCLE")) {
+        if ("CIRCLE".equalsIgnoreCase(shapeType)) {
             return new Circle();
-        } else if (shapeType.equalsIgnoreCase("RECTANGLE")) {
+        } else if ("RECTANGLE".equalsIgnoreCase(shapeType)) {
             return new Rectangle();
-        } else if (shapeType.equalsIgnoreCase("SQUARE")) {
+        } else if ("SQUARE".equalsIgnoreCase(shapeType)) {
             return new Square();
         }
         return null;
@@ -30,9 +30,9 @@ public class ShapeFactory {
     /**
      * 使用反射机制可以解决每次增加一个产品时，都需要增加一个对象实现工厂的缺点
      *
-     * @param clazz
-     * @param <T>
-     * @return
+     * @param clazz 类
+     * @param <T>   泛型
+     * @return T
      */
     public static <T> T getClass(Class<? extends T> clazz) {
         T obj = null;
