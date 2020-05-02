@@ -7,7 +7,7 @@
 简单工厂模式并不属于GoF 23个经典设计模式，但通常将它作为学习其他工厂模式的基础，它的设计思想很简单，其基本流程如下：首先将需要创建的各种不同对象（例如各种不同的Shape对象）的相关代码封装到不同的类中，这些类称为具体产品类，而将它们公共的代码进行抽象和提取后封装在一个抽象产品类中，每一个具体产品类都是抽象产品类的子类；然后提供一个工厂类用于创建各种产品，在工厂类中提供一个创建产品的工厂方法，该方法可以根据所传入的参数不同创建不同的具体产品对象；客户端只需调用工厂类的工厂方法并传入相应的参数即可得到一个产品对象。
 
 简单工厂模式结构比较简单，其核心是工厂类的设计，其结构如图所示：<br/>
-![](image/简单工厂模式结构图.png)
+![](src/main/resources/image/简单工厂模式结构图.png)
 
 在简单工厂模式中包含如下几个角色：
 * Factory（工厂类）：负责实现创建所有产品实例的内部逻辑，在工厂类中提供静态的工厂方法，返回抽象产品。
@@ -67,11 +67,11 @@ public class ShapeFactory {
         if (shapeType == null) {
             return null;
         }
-        if (shapeType.equalsIgnoreCase("CIRCLE")) {
+        if ("CIRCLE".equalsIgnoreCase(shapeType)) {
             return new Circle();
-        } else if (shapeType.equalsIgnoreCase("RECTANGLE")) {
+        } else if ("RECTANGLE".equalsIgnoreCase(shapeType)) {
             return new Rectangle();
-        } else if (shapeType.equalsIgnoreCase("SQUARE")) {
+        } else if ("SQUARE".equalsIgnoreCase(shapeType)) {
             return new Square();
         }
         return null;
@@ -124,8 +124,7 @@ public class XMLUtil {
             // 获取包含图表类型的文本节点
             NodeList nl = doc.getElementsByTagName("shapeType");
             Node classNode = nl.item(0).getFirstChild();
-            String shapeType = classNode.getNodeValue().trim();
-            return shapeType;
+            return classNode.getNodeValue().trim();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
