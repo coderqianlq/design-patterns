@@ -4,9 +4,9 @@ import com.qianlq.factorymethod.demo.Rectangle;
 import com.qianlq.factorymethod.demo.Shape;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/11/22 2:03 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class RectangleFactory extends AbstractFactory {
@@ -14,7 +14,7 @@ public class RectangleFactory extends AbstractFactory {
     /**
      * 返回具体的 Rectangle 实例
      *
-     * @return
+     * @return Rectangle
      */
     @Override
     public Shape getShape() {

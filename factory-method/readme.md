@@ -7,7 +7,7 @@
 定义一个用于创建对象的接口，让子类决定将哪一个类实例化。工厂方法模式让一个类的实例化延迟到其子类。
 
 工厂方法模式提供一个抽象工厂接口来声明抽象工厂方法，而由其子类来具体实现工厂方法，创建具体的产品对象。工厂方法模式结构如图所示：<br/>
-![](image/工厂方法模式结构图.png)
+![](src/main/resources/image/工厂方法模式结构图.png)
 
 在工厂方法模式结构图中包含如下几个角色：
 * 抽象产品类 它是定义产品的接口，是工厂方法模式所创建对象的超类。
@@ -18,9 +18,8 @@
 ### 模式实现
 
 与简单工厂模式相比，工厂方法模式最重要的区别是引入了抽象工厂角色，抽象工厂可以是接口，也可以是抽象类或者具体类，其典型代码如下所示：
-```
+```java
 public abstract class AbstractFactory {
-
     public abstract Shape getShape();
 }
 ```
@@ -31,8 +30,7 @@ public class CircleFactory extends AbstractFactory {
 
     /**
      * 返回具体的 Circle 实例
-     *
-     * @return
+     * @return Circle
      */
     @Override
     public Shape getShape() {
@@ -46,8 +44,7 @@ public class RectangleFactory extends AbstractFactory {
 
     /**
      * 返回具体的 Rectangle 实例
-     *
-     * @return
+     * @return Rectangle
      */
     @Override
     public Shape getShape() {
@@ -61,8 +58,7 @@ public class SquareFactory extends AbstractFactory {
 
     /**
      * 返回具体的 Square 实例
-     *
-     * @return
+     * @return Square
      */
     @Override
     public Shape getShape() {
@@ -118,8 +114,7 @@ public class XMLUtil {
 
             String className = classNode.getNodeValue();
             Class clazz = Class.forName(className);
-            Object obj = clazz.newInstance();
-            return obj;
+            return clazz.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }

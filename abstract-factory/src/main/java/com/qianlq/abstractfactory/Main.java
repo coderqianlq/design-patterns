@@ -6,12 +6,12 @@ import com.qianlq.abstractfactory.demo.color.Color;
 import com.qianlq.abstractfactory.demo.shape.Shape;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午7:34
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class AbstractFactoryPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         BlueCircleFactory bcf = new BlueCircleFactory();

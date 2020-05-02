@@ -4,9 +4,9 @@ import com.qianlq.factorymethod.demo.Circle;
 import com.qianlq.factorymethod.demo.Shape;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午4:29
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class CircleFactory extends AbstractFactory {
@@ -14,7 +14,7 @@ public class CircleFactory extends AbstractFactory {
     /**
      * 返回具体的 Circle 实例
      *
-     * @return
+     * @return Shape
      */
     @Override
     public Shape getShape() {

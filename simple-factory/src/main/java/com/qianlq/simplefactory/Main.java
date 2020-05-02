@@ -11,7 +11,7 @@ import com.qianlq.util.XMLUtil;
  * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class SimpleFactoryDemo {
+public class Main {
 
     public static void main(String[] args) {
         Shape rectangle = ShapeFactory.getShape("Rectangle");

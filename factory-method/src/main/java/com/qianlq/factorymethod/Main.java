@@ -8,12 +8,12 @@ import com.qianlq.factorymethod.demo.Shape;
 import com.qianlq.util.XMLUtil;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午4:27
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class FactoryPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         AbstractFactory factory;
@@ -29,7 +29,8 @@ public class FactoryPatternDemo {
         Shape square = factory.getShape();
         square.draw();
 
-        factory = (AbstractFactory) XMLUtil.getObject("factory-method/src/main/java/com/qianlq/factorymethod/config/config.xml", "className");
+        factory = (AbstractFactory) XMLUtil.getObject("factory-method/src/main/resources/config/config.xml", "className");
+        assert factory != null;
         Shape shape = factory.getShape();
         shape.draw();
     }
