@@ -3,12 +3,12 @@ package com.qianlq.builder;
 import com.qianlq.builder.meal.Meal;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/11 下午2:21
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class BuilderPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         MealDirector director = new MealDirector();

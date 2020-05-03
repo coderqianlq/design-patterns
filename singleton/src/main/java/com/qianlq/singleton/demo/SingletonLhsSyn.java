@@ -9,12 +9,10 @@ package com.qianlq.singleton.demo;
  * 优点：第一次调用才初始化，避免内存浪费。
  * 缺点：必须加锁 synchronized 才能保证单例，但加锁会影响效率。
  * getInstance() 的性能对应用程序不是很关键（该方法使用不太频繁）。
- */
-
-/**
- * @author qianliqing
+ *
+ * @author CoderQian
  * @date 2018/4/8 下午3:02
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class SingletonLhsSyn {

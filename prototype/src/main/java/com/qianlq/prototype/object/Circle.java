@@ -1,9 +1,9 @@
 package com.qianlq.prototype.object;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午2:31
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class Circle extends Shape {

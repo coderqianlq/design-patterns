@@ -1,7 +1,7 @@
 ## 单例模式
 
 对于一个软件系统的某些类而言，我们无须创建多个实例。举个大家都熟知的例子——Windows任务管理器，如图所示。<br/>
-![](image/任务管理器.png)
+![](src/main/resources/image/任务管理器.png)
 
 通常情况下，无论我们启动任务管理多少次，Windows系统始终只能弹出一个任务管理器窗口。为什么要这样设计呢？我们可以从以下两个方面来分析：其一，如果能弹出多个窗口，且这些窗口的内容完全一致，全部是重复对象，这势必会浪费系统资源，任务管理器需要获取系统运行时的诸多信息，这些信息的获取需要消耗一定的系统资源，包括CPU资源及内存资源等；其二，如果弹出的多个窗口内容不一致，这就意味着在某一瞬间系统资源使用情况和进程、服务等信息存在多个状态，例如任务管理器窗口A显示“CPU使用率”为10%，窗口B显示“CPU使用率”为15%，到底哪个才是真实的呢？
 
@@ -68,6 +68,7 @@ public class TaskManager {
 
     //显示服务
     public void displayServices() { /*……*/ }
+
     //其他方法
     //……
 
@@ -89,7 +90,7 @@ public class TaskManager {
 单例模式有三个要点：一是某个类只能有一个实例；二是它必须自行创建这个实例；三是它必须自行向整个系统提供这个实例。
 
 单例模式是结构最简单的设计模式一，在它的核心结构中只包含一个被称为单例类的特殊类。单例模式结构如图所示：<br/>
-![](image/单例模式结构图.png)
+![](src/main/resources/image/单例模式结构图.png)
 
 在单例模式结构图中只包含一个角色：
 * Singleton（单例）：在单例类的内部实现只生成一个实例，同时提供一个静态的getInstance()方法，让客户可以访问它的唯一实例；为了防止在外部对其实例化，将其构造函数设计为私有；在单例类内部定义了一个Singleton类型的静态对象，作为外部共享的唯一实例。
@@ -99,7 +100,7 @@ public class TaskManager {
 #### 2.1 饿汉式
 
 饿汉式单例类是实现起来最简单的单例类，饿汉式单例类结构图如图所示：<br/>
-![](image/饿汉式单例结构图.png)
+![](src/main/resources/image/饿汉式单例结构图.png)
 
 从图中可以看出，由于在定义静态变量的时候实例化单例类，因此在类加载的时候就已经创建了单例对象，代码如下所示：
 
@@ -126,7 +127,7 @@ public class SingletonEhs {
 #### 2.2 懒汉式
 
 除了饿汉式单例，还有一种经典的懒汉式单例，也就是第一章节中TaskManager实现的方式，懒汉式单例类结构图如图所示：<br/>
-![](image/懒汉式单例结构图.png)
+![](src/main/resources/image/懒汉式单例结构图.png)
 
 从图中可以看出，懒汉式单例在第一次调用getInstance()方法时实例化，在类加载时并不自行实例化，这种技术又称为延迟加载(Lazy Loading)技术，即需要的时候再加载实例，代码如下所示：
 
@@ -210,7 +211,7 @@ public class SingletonDCL {
 ```java
 public class SingletonDCL {
 
-    //对保存实例的变量添加volitile的修饰
+    //对保存实例的变量添加 volitile 的修饰
     private volatile static SingletonDCL instance;
 
     private SingletonDCL() {
@@ -247,7 +248,7 @@ public class SingletonDCL {
 ```java
 public class SingletonSIC {
 
-    //类级的内部类，也就是静态类的成员式内部类，该内部类的实例与外部类的实例没有绑定关系，而且只有被调用时才会装载，从而实现了延迟加载
+    //静态内部类，该内部类的实例与外部类的实例没有绑定关系，而且只有被调用时才会装载，从而实现了延迟加载
     private static class SingletonHolder {
         //静态初始化器，由JVM来保证线程安全
         private static final SingletonSIC INSTANCE = new SingletonSIC();
@@ -256,7 +257,7 @@ public class SingletonSIC {
     private SingletonSIC() {
     }
 
-    public static final SingletonSIC getInstance() {
+    public static SingletonSIC getInstance() {
         return SingletonHolder.INSTANCE;
     }
 
@@ -314,7 +315,7 @@ Exception in thread "main" java.lang.NoSuchMethodException: cn.qianlq.singleton.
 ```
 
 枚举类的实质：<br/>
-![](image/枚举类实质图.png)
+![](src/main/resources/image/枚举类实质图.png)
 
 ### 模式总结
 

@@ -5,9 +5,9 @@ import com.qianlq.builder.meal.pack.Packing;
 import com.qianlq.builder.meal.pack.Wrapper;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/11 下午1:46
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public abstract class Burger implements Item {

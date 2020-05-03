@@ -8,9 +8,9 @@ import com.qianlq.prototype.object.Square;
 import java.util.Hashtable;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午2:34
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class ShapeCache {

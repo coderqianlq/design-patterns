@@ -3,12 +3,12 @@ package com.qianlq.singleton;
 import com.qianlq.singleton.demo.*;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午2:46
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class SingletonPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
 

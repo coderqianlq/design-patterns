@@ -1,30 +1,34 @@
 package com.qianlq.singleton.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-11-27 9:15 AM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class TaskManager {
 
-    //初始化窗口
-    //public TaskManager() {
-    //    /*……*/
-    //}
+    /**
+     * 初始化窗口
+     */
     private TaskManager() {
-        /*……*/
+        //
     }
 
-    //显示进程
+    /**
+     * 显示进程
+     */
     public void displayProcesses() {
-        /*……*/
+        //
     }
 
-    //显示服务
+    /**
+     * 显示服务
+     */
     public void displayServices() {
-        /*……*/
+        //
     }
+
     //其他方法
     //……
 

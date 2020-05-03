@@ -6,9 +6,10 @@ import com.qianlq.singleton.demo.SingletonEnum;
 import java.lang.reflect.Constructor;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-11-27 10:09 AM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
+ * @description 反射破坏单例
  */
 
 public class SingleReflection {
