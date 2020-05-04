@@ -3,9 +3,9 @@ package com.qianlq.adapter.demo;
 /**
  * 对象适配器模式
  *
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/12/10 8:24 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class Adapter implements Target {

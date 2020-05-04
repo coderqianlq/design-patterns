@@ -1,20 +1,20 @@
 package com.qianlq.bridge.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/12/11 5:26 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class Circle extends Shape {
 
-    public Circle(ColorAPI colorAPI) {
-        super(colorAPI);
+    public Circle(ColorApi colorApi) {
+        super(colorApi);
     }
 
     @Override
     public void draw() {
         System.out.print("draw circle, ");
-        colorAPI.drawColor();
+        colorApi.drawColor();
     }
 }

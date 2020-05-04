@@ -1,12 +1,12 @@
 package com.qianlq.bridge.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-09-19 下午2:37
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class RedCircle implements DrawAPI {
+public class RedCircle implements DrawApi {
 
     @Override
     public void drawCircle(int radius, int x, int y) {

@@ -1,9 +1,9 @@
 package com.qianlq.adapter.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/6/8 下午8:14
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public interface AdvancedMediaPlayer {

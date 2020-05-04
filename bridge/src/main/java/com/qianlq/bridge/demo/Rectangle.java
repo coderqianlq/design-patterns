@@ -1,20 +1,20 @@
 package com.qianlq.bridge.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/12/11 5:33 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class Rectangle extends Shape {
 
-    public Rectangle(ColorAPI colorAPI) {
+    public Rectangle(ColorApi colorAPI) {
         super(colorAPI);
     }
 
     @Override
     public void draw() {
         System.out.print("draw rectangle, ");
-        colorAPI.drawColor();
+        colorApi.drawColor();
     }
 }

@@ -7,7 +7,7 @@
 如果软件系统中某个类存在两个独立变化的维度，通过该模式可以将这两个维度分离出来，使两者可以独立扩展，让系统更加符合“单一职责原则”。与多层继承方案不同，它将两个独立变化的维度设计为两个独立的继承等级结构，并且在抽象层建立一个抽象关联。
 
 桥接模式用一种巧妙的方式处理多层继承存在的问题，用抽象关联取代传统的多层继承，将类之间的静态继承关系转换为动态的对象组合关系，使得系统更加灵活，并易于扩展，同时有效控制了系统中类的个数。桥接模式结构如图所示：<br/>
-![](image/桥接模式结构图.png)
+![](src/main/resources/image/桥接模式结构图.png)
 
 在桥接模式结构图中包含如下几个角色：
 * Abstraction（抽象类）：用于定义抽象类的接口，它一般是抽象类而不是接口，其中定义一个Implementor（实现类接口）类型的对象，它既可以包含抽象业务方法，也可以包含具体业务方法。
@@ -21,14 +21,14 @@
 
 首先需要针对两个不同的维度提取抽象类和实现类接口，并建立一个抽象关联关系。对于“实现部分”，典型的实现类接口代码如下所示：
 ```java
-public interface ColorAPI {
+public interface ColorApi {
     void drawColor();
 }
 ```
 
 在子类中实现该接口类中声明的方法，其典型代码如下所示：
 ```java
-public class Red implements ColorAPI {
+public class Red implements ColorApi {
 
     @Override
     public void drawColor() {
@@ -42,10 +42,10 @@ public class Red implements ColorAPI {
 ```java
 public abstract class Shape {
 
-    protected ColorAPI colorAPI;
+    protected ColorApi colorApi;
 
-    public Shape(ColorAPI colorAPI) {
-        this.colorAPI = colorAPI;
+    public Shape(ColorApi colorApi) {
+        this.colorApi = colorApi;
     }
 
     public abstract void draw();
@@ -56,14 +56,14 @@ public abstract class Shape {
 ```java
 public class Circle extends Shape {
 
-    public Circle(ColorAPI colorAPI) {
-        super(colorAPI);
+    public Circle(ColorApi colorApi) {
+        super(colorApi);
     }
 
     @Override
     public void draw() {
         System.out.print("draw circle, ");
-        colorAPI.drawColor();
+        colorApi.drawColor();
     }
 }
 ```
@@ -83,21 +83,21 @@ public class Client {
 ```java
 public class Rectangle extends Shape {
 
-    public Rectangle(ColorAPI colorAPI) {
-        super(colorAPI);
+    public Rectangle(ColorAPI colorApi) {
+        super(colorApi);
     }
 
     @Override
     public void draw() {
         System.out.print("draw rectangle, ");
-        colorAPI.drawColor();
+        colorApi.drawColor();
     }
 }
 ```
 
 如果需要新增一种颜色，也只需新增一个子类实现接口及接口中声明的方法，代码如下：
 ```java
-public class Green implements ColorAPI {
+public class Green implements ColorApi {
 
     @Override
     public void drawColor() {
@@ -132,9 +132,7 @@ public class XMLUtil {
             Node node = nl.item(0).getFirstChild();
 
             String name = node.getNodeValue();
-            Class clazz = Class.forName(name);
-            //Object obj = clazz.newInstance();
-            return clazz;
+            return Class.forName(name);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -150,9 +148,9 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
         Class clazz = XMLUtil.getClass("shape");
-        Constructor constructor = clazz.getConstructor(ColorAPI.class);
+        Constructor constructor = clazz.getConstructor(ColorApi.class);
 
-        Shape shape = (Shape) constructor.newInstance((ColorAPI) XMLUtil.getClass("color").newInstance());
+        Shape shape = (Shape) constructor.newInstance((ColorApi) XMLUtil.getClass("color").newInstance());
         shape.draw();
     }
 }

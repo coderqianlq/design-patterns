@@ -5,12 +5,12 @@ import com.qianlq.adapter.demo.*;
 import com.qianlq.util.XMLUtil;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/6/8 下午8:32
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class AdapterPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         Adaptee adaptee = new Mp4Adaptee();
@@ -21,7 +21,8 @@ public class AdapterPatternDemo {
         target = new Adapter(adaptee);
         target.play();
 
-        Adaptee vlcAdaptee = (Adaptee) XMLUtil.getObject("adapter/src/main/java/com/qianlq/adapter/config/config.xml", "adapteeType");
+        Adaptee vlcAdaptee = (Adaptee) XMLUtil.getObject("adapter/src/main/resources/config/config.xml", "adapteeType");
+        assert vlcAdaptee != null;
         vlcAdaptee.playMusic();
 
         AudioPlayer audioPlayer = new AudioPlayer();
