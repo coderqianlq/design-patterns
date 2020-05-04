@@ -1,21 +1,21 @@
-## 设计模式（参考菜鸟教程)
+# 设计模式（参考菜鸟教程)
 提供一些常见的设计模式及其典型案例（含代码）。
 
-#### 设计模式简介
+## 设计模式简介
 
 设计模式（Design pattern）代表了最佳的实践，通常被有经验的面向对象的软件开发人员所采用。设计模式是软件开发人员在软件开发过程中面临的一般问题的解决方案。这些解决方案是众多软件开发人员经过相当长的一段时间的试验和错误总结出来的。
 
 设计模式是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了重用代码、让代码更容易被他人理解、保证代码可靠性。
 
-#### 设计模式的类型
+## 设计模式的类型
 
 根据设计模式的参考书 Design Patterns - Elements of Reusable Object-Oriented Software（中文译名：设计模式 - 可复用的面向对象软件元素） 中所提到的，总共有 23 种设计模式。这些模式可以分为三大类：创建型模式（Creational Patterns）、结构型模式（Structural Patterns）、行为型模式（Behavioral Patterns）。
 
-#### 设计模式关系图
+## 设计模式关系图
 
 ![设计模式关系图](http://www.runoob.com/wp-content/uploads/2014/08/the-relationship-between-design-patterns.jpg)
 
-#### 设计模式的六大原则
+## 设计模式的六大原则
 
 1、开闭原则（Open Close Principle）
 
@@ -41,32 +41,42 @@
 
 合成复用原则是指：尽量使用合成/聚合的方式，而不是使用继承。
 
-#### 创建型模式
+## 设计模式分类
 
-* [单例模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/singleton/)
-* [原型模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/prototype/)
-* [建造者模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/builder/)
-* [简单工厂模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/simplefactory/)
-* [工厂方法模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/factorymethod/)
-* [抽象工厂模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/abstractfactory/)
+### 创建型模式
 
-#### 结构型模式
+* [简单工厂模式](simple-factory)
+* [工厂方法模式](factory-method)
+* [抽象工厂模式](abstract-factory)
+* [单例模式](singleton)
+* [原型模式](prototype)
+* [建造者模式](builder)
 
-* [适配器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/adapter/)
-* [桥接模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/bridge/)
-* [装饰器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/decorator/)
-* [过滤器模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/filter/)
-* [组合模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/composite/)
-* [外观模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/facade/)
-* [享元模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/flyweight/)
+### 结构型模式
 
-#### 行为型模式
+* [适配器模式](adapter)
+* [桥接模式](bridge)
+* [装饰模式](decorator)
+* [代理模式](proxy)
+* [组合模式](composite)
+* [外观模式](facade)
+* [享元模式](flyweight)
 
-* [策略模式]()
-* [观察者模式](https://github.com/coderqianlq/design-patterns/blob/master/src/cn/qianlq/observer/)
+### 行为型模式
 
-#### J2EE 模式
+* [策略模式](strategy)
+* [观察者模式](observer)
+* [职责链模式](chain)
+* [命令模式](command)
+* [解释器模式](interpreter)
+* [模板方法模式](template-method)
+* 状态模式
+* 迭代器模式
+* 中介者模式
+* 备忘录模式
+* 访问者模式
 
-#### 菜鸟教程链接
+## 推荐书籍、学习教程
 
-[菜鸟教程](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
+* 《Head First设计模式》
+* [菜鸟教程](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)

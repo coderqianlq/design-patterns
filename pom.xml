@@ -25,7 +25,6 @@
         <module>proxy</module>
         <module>chain</module>
         <module>command</module>
-        <module>filter</module>
         <module>observer</module>
         <module>strategy</module>
         <module>template-method</module>
