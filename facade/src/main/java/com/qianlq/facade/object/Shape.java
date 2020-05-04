@@ -1,9 +1,9 @@
 package com.qianlq.facade.object;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-11-18 8:42 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public interface Shape {

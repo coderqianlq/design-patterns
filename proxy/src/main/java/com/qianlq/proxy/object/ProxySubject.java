@@ -1,14 +1,14 @@
 package com.qianlq.proxy.object;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-02-02 11:25 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class ProxySubject implements Subject {
 
-    private RealSubject realSubject = new RealSubject();
+    private final RealSubject realSubject = new RealSubject();
 
     @Override
     public void request() {

@@ -11,12 +11,12 @@ import java.util.Stack;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/11/16 3:49 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class CompositePatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         Component root, componentA, componentB, leafA1, leafA2, leafA3, leafB1, leafB2, leafOfRoot;

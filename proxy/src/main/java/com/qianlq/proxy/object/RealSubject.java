@@ -1,9 +1,9 @@
 package com.qianlq.proxy.object;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-02-02 11:09 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class RealSubject implements Subject {

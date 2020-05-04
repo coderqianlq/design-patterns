@@ -7,5 +7,8 @@ package com.qianlq.bridge.demo;
  */
 
 public interface ColorApi {
+    /**
+     * add color
+     */
     void drawColor();
 }

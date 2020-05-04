@@ -8,8 +8,8 @@ package com.qianlq.bridge.demo;
 
 public class Rectangle extends Shape {
 
-    public Rectangle(ColorApi colorAPI) {
-        super(colorAPI);
+    public Rectangle(ColorApi colorApi) {
+        super(colorApi);
     }
 
     @Override

@@ -7,23 +7,26 @@ import com.qianlq.proxy.object.Subject;
 import com.qianlq.proxy.object.ProxySubject;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-02-02 10:31 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class ProxyPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
+        System.out.println("传统方式");
         Subject subject = new ProxySubject();
         subject.request();
 
         Subject realSubject = new RealSubject();
 
+        System.out.println("\nJdk代理的方式:");
         JdkProxy jdkProxy = new JdkProxy();
         Subject jdkSubject = jdkProxy.newProxy(realSubject);
         jdkSubject.request();
 
+        System.out.println("\nCglib代理的方式:");
         CglibProxy cglibProxy = new CglibProxy();
         Subject cglibSubject = (Subject) cglibProxy.createProxyObject(realSubject);
         cglibSubject.request();

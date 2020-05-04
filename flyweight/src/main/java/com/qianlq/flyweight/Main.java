@@ -4,17 +4,18 @@ import com.qianlq.flyweight.object.Circle;
 import com.qianlq.flyweight.object.ShapeFactory;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-12-30 8:50 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
+ * @description 享元模式通常与其它模式（比如工厂模式）配合使用
  */
 
-public class FlyweightPatternDemo {
+public class Main {
 
-    private static final String colors[] = {"Red", "Green", "Blue", "White", "Black"};
+    private static final String[] COLORS = {"Red", "Green", "Blue", "White", "Black"};
 
     private static String getRandomColor() {
-        return colors[(int) (Math.random() * colors.length)];
+        return COLORS[(int) (Math.random() * COLORS.length)];
     }
 
     private static int getRandomX() {

@@ -3,12 +3,12 @@ package com.qianlq.facade;
 import com.qianlq.facade.object.ShapeMaker;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-11-18 8:44 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class FacadePatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         ShapeMaker shapeMaker = new ShapeMaker();
