@@ -1,14 +1,14 @@
-package com.qianlq.observer.object;
+package com.qianlq.observer.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-10-08 下午8:51
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class HexaObserver extends Observer {
+public class HexObserver extends Observer {
 
-    public HexaObserver(Subject subject) {
+    public HexObserver(Subject subject) {
         this.subject = subject;
         this.subject.attach(this);
     }

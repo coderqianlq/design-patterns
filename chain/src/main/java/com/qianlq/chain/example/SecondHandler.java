@@ -1,9 +1,9 @@
 package com.qianlq.chain.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-06-28 11:51 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class SecondHandler extends Handler {

@@ -3,12 +3,12 @@ package com.qianlq.command;
 import com.qianlq.command.example.*;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/7/12 3:14 PM
- * email: qianliqing@hyperchain.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class CommandPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         System.out.println("测试单请求单接收者的情况：");

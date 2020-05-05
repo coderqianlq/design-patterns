@@ -6,12 +6,12 @@ import com.qianlq.chain.example.SecondHandler;
 import com.qianlq.chain.example.ThirdHandler;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-06-28 11:55 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class ChainPatternDemo {
+public class Main {
 
     private static Handler getChainOfHandlers() {
 
@@ -27,7 +27,7 @@ public class ChainPatternDemo {
     }
 
     public static void main(String[] args) {
-        Handler handler = ChainPatternDemo.getChainOfHandlers();
+        Handler handler = Main.getChainOfHandlers();
         handler.handleRequest("handler");
     }
 }

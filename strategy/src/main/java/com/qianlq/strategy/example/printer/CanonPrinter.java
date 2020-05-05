@@ -1,7 +1,7 @@
 package com.qianlq.strategy.example.printer;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-09-14 14:52
  * @since v1.0
  */
@@ -21,6 +21,7 @@ public class CanonPrinter extends AbstractPrinter {
         } else if (quantity > 100) {
             this.price = this.price * 0.6;
         } else {
+            // do something
         }
     }
 }

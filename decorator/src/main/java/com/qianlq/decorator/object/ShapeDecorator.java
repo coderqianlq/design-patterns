@@ -16,6 +16,8 @@ public abstract class ShapeDecorator implements Shape {
 
     @Override
     public void draw() {
+        // do something before
         decoratedShape.draw();
+        // or do something after
     }
 }

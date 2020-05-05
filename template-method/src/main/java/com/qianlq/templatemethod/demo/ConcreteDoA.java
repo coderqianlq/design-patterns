@@ -1,9 +1,9 @@
 package com.qianlq.templatemethod.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-15 15:03
- * @since v1.0
  */
 
 public class ConcreteDoA extends AbstractTemplate {

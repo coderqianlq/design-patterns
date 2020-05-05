@@ -1,7 +1,7 @@
 package com.qianlq.strategy.example.printer;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-09-14 14:56
  * @since v1.0
  */

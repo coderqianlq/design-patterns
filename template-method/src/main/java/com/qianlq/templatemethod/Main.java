@@ -4,12 +4,12 @@ import com.qianlq.templatemethod.demo.AbstractTemplate;
 import com.qianlq.templatemethod.demo.ConcreteDoB;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-14 18:48
- * @since v1.0
  */
 
-public class TemplateMethodPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         AbstractTemplate doB = new ConcreteDoB();

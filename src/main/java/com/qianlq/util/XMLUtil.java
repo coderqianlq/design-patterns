@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/12/13 2:43 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class XMLUtil {
@@ -28,19 +28,17 @@ public class XMLUtil {
             // 获取包含图表类型的文本节点
             NodeList nl = doc.getElementsByTagName(tag);
             Node classNode = nl.item(0).getFirstChild();
-            String bean = classNode.getNodeValue().trim();
-            return bean;
+            return classNode.getNodeValue().trim();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
     }
 
-    public static Class getClass(String path, String tag) {
+    public static Class<?> getClass(String path, String tag) {
         try {
             String className = getBean(path, tag);
-            Class clazz = Class.forName(className);
-            return clazz;
+            return Class.forName(className);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -49,9 +47,9 @@ public class XMLUtil {
 
     public static Object getObject(String path, String tag) {
         try {
-            Class clazz = getClass(path, tag);
-            Object obj = clazz.newInstance();
-            return obj;
+            Class<?> clazz = getClass(path, tag);
+            assert clazz != null;
+            return clazz.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
             return null;

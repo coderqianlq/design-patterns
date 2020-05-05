@@ -6,12 +6,12 @@ import com.qianlq.strategy.demo.Context;
 import com.qianlq.util.XMLUtil;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @version v1.0
  * @date 2019-09-14
  */
 
-public class StrategyPatternDemo {
+public class Main {
 
     public static void main(String[] args) {
         Context context = new Context();
@@ -20,7 +20,7 @@ public class StrategyPatternDemo {
         context.setStrategy(strategy);
         context.algorithm();
 
-        strategy = (AbstractStrategy) XMLUtil.getObject("strategy/src/main/java/com/qianlq/strategy/config/config.xml", "className");
+        strategy = (AbstractStrategy) XMLUtil.getObject("strategy/src/main/resources/config/config.xml", "className");
         context.setStrategy(strategy);
         context.algorithm();
     }

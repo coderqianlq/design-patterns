@@ -1,9 +1,9 @@
 package com.qianlq.command.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/7/12 3:38 PM
- * email: qianliqing@hyperchain.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class ConcreteReceiverA extends AbstractReceiver {

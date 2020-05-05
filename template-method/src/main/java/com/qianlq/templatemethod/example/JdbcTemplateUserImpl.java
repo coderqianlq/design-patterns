@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-14 21:13
- * @since v1.0
  */
 
 public class JdbcTemplateUserImpl extends JdbcTemplate {

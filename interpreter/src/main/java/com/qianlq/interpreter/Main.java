@@ -6,12 +6,11 @@ import com.qianlq.interpreter.example.OrExpression;
 import com.qianlq.interpreter.example.TerminalExpression;
 
 /**
- * @author qianliqing
- * @version v1.0
+ * @author CoderQian
  * @date 2019-09-14
  */
 
-public class InterpreterPatternDemo {
+public class Main {
 
     public static AbstractExpression getMaleExpression() {
         AbstractExpression robert = new TerminalExpression("Robert");
