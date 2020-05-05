@@ -1,12 +1,12 @@
 package com.qianlq.bridge.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/12/11 5:28 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
-public class Green implements ColorAPI {
+public class Green implements ColorApi {
 
     @Override
     public void drawColor() {

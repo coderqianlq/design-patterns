@@ -1,16 +1,17 @@
 package com.qianlq.bridge.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-09-19 下午2:40
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class Circle extends Shape {
+
     private int x, y, radius;
 
-    public Circle(int x, int y, int radius, DrawAPI drawAPI) {
-        super(drawAPI);
+    public Circle(int x, int y, int radius, DrawApi drawApi) {
+        super(drawApi);
         this.x = x;
         this.y = y;
         this.radius = radius;
@@ -18,6 +19,6 @@ public class Circle extends Shape {
 
     @Override
     public void draw() {
-        drawAPI.drawCircle(radius, x, y);
+        drawApi.drawCircle(radius, x, y);
     }
 }

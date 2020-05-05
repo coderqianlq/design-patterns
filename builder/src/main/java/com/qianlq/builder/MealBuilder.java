@@ -7,9 +7,9 @@ import com.qianlq.builder.meal.drink.Coke;
 import com.qianlq.builder.meal.drink.Pepsi;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/11 下午2:21
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class MealBuilder extends AbstractBuilder {

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-09-14 14:59
  * @since v1.0
  */
@@ -20,12 +20,9 @@ public class PrinterClient {
         Class<?> clazz = Class.forName("com.qianlq.strategy.example.printer.HpPrinter");
         AbstractPrinter o = (AbstractPrinter) clazz.newInstance();
 
-        String isInStrategy = XMLUtil.getBean("strategy/src/main/java/com/qianlq/strategy/config/printer.xml", "inStrategy");
-        List<String> list = XMLUtil.getBeanList("strategy/src/main/java/com/qianlq/strategy/config/printer.xml", "className");
-
-        if (list == null || list.size() < 1) {
-            return;
-        }
+        String isInStrategy = XMLUtil.getBean("strategy/src/main/resources/config/printer.xml", "inStrategy");
+        List<String> list = XMLUtil.getBeanList("strategy/src/main/resources/config/printer.xml", "className");
+        assert list != null && list.size() > 0;
 
         //模拟客户端的输入
         Scanner scanner = new Scanner(System.in);

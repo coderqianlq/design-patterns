@@ -3,9 +3,9 @@ package com.qianlq.templatemethod.example.model;
 import java.util.Date;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-14 21:16
- * @since v1.0
  */
 
 public class User {

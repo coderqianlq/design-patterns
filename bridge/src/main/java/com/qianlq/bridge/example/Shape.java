@@ -1,17 +1,17 @@
 package com.qianlq.bridge.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-09-19 下午2:38
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public abstract class Shape {
 
-    protected DrawAPI drawAPI;
+    protected DrawApi drawApi;
 
-    protected Shape(DrawAPI drawAPI) {
-        this.drawAPI = drawAPI;
+    protected Shape(DrawApi drawApi) {
+        this.drawApi = drawApi;
     }
 
     public abstract void draw();

@@ -1,9 +1,9 @@
 package com.qianlq.decorator.object;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-12-15 2:02 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class RedFillDecorator extends ShapeDecorator {

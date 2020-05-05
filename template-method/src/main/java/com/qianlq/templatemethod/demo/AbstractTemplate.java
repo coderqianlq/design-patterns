@@ -1,9 +1,9 @@
 package com.qianlq.templatemethod.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-15 14:22
- * @since v1.0
  */
 
 public abstract class AbstractTemplate {
@@ -15,7 +15,7 @@ public abstract class AbstractTemplate {
         doFirst();
         doSecond();
         doThird();
-        doFouth();
+        doFourth();
     }
 
     /**
@@ -38,7 +38,7 @@ public abstract class AbstractTemplate {
     /**
      * 具体方法
      */
-    void doFouth() {
+    void doFourth() {
         System.out.println("finish!");
     }
 }

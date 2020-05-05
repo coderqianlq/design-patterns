@@ -1,9 +1,9 @@
 package com.qianlq.templatemethod.example;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-14 21:22
- * @since v1.0
  */
 
 public class JdbcClient {

@@ -1,9 +1,9 @@
 package com.qianlq.builder.meal.burger;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/11 下午1:48
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class ChickenBurger extends Burger {

@@ -1,9 +1,9 @@
 package com.qianlq.singleton.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午2:44
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class SingleObject {
@@ -14,16 +14,16 @@ public class SingleObject {
     private static SingleObject ourInstance = new SingleObject();
 
     /**
-     * 构造函数私有化，这样该类就不会被实例化
+     * 获取唯一可用的对象
      *
-     * @return
+     * @return SingleObject
      */
     public static SingleObject getInstance() {
         return ourInstance;
     }
 
     /**
-     * 获取唯一可用的对象
+     * 构造函数私有化，这样该类就不会被实例化
      */
     private SingleObject() {
     }

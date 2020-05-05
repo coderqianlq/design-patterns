@@ -6,9 +6,9 @@ import com.qianlq.simplefactory.demo.Shape;
 import com.qianlq.simplefactory.demo.Square;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/11/21 4:41 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class ShapeFactory {
@@ -30,10 +30,10 @@ public class ShapeFactory {
     /**
      * 使用反射机制可以解决每次增加一个产品时，都需要增加一个对象实现工厂的缺点
      *
-     * @param clazz 类
-     * @param <T>   泛型
-     * @return T
+     * @param clazz 具体工程类
+     * @return 泛型
      */
+    @SuppressWarnings("unchecked")
     public static <T> T getClass(Class<? extends T> clazz) {
         T obj = null;
         try {

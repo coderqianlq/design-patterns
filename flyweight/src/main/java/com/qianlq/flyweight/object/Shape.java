@@ -1,9 +1,9 @@
 package com.qianlq.flyweight.object;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-12-30 8:51 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public interface Shape {

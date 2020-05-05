@@ -1,9 +1,9 @@
 package com.qianlq.builder.meal.pack;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/11 下午1:45
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class Bottle implements Packing {

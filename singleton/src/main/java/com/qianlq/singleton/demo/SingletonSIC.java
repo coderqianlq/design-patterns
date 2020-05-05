@@ -10,15 +10,15 @@ package com.qianlq.singleton.demo;
  */
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/4/8 下午3:41
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class SingletonSIC {
 
     /**
-     * 类级的内部类，也就是静态类的成员式内部类，该内部类的实例与外部类的实例没有绑定关系，而且只有被调用时才会装载，从而实现了延迟加载
+     * 静态内部类，该内部类的实例与外部类的实例没有绑定关系，而且只有被调用时才会装载，从而实现了延迟加载
      */
     private static class SingletonHolder {
         /**
@@ -30,7 +30,7 @@ public class SingletonSIC {
     private SingletonSIC() {
     }
 
-    public static final SingletonSIC getInstance() {
+    public static SingletonSIC getInstance() {
         return SingletonHolder.INSTANCE;
     }
 

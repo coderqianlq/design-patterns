@@ -1,9 +1,9 @@
 package com.qianlq.templatemethod.example.constant;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-14 20:59
- * @since v1.0
  */
 
 public class ConnectionConstant {

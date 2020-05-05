@@ -3,9 +3,9 @@ package com.qianlq.flyweight.object;
 import java.util.HashMap;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-12-30 8:52 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class ShapeFactory {

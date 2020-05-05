@@ -3,9 +3,9 @@ package com.qianlq.factorymethod.factory;
 import com.qianlq.factorymethod.demo.Shape;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/11/22 1:58 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public abstract class AbstractFactory {

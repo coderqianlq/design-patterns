@@ -1,9 +1,9 @@
 package com.qianlq.adapter.demo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/12/10 8:20 PM
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public interface Target {

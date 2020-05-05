@@ -11,12 +11,10 @@ package com.qianlq.singleton.demo;
  * 它不仅能避免多线程同步问题，而且还自动支持序列化机制，防止反序列化重新创建新的对象，绝对防止多次实例化。
  * 不过，由于 JDK1.5 之后才加入 enum 特性，用这种方式写不免让人感觉生疏，在实际工作中，也很少用。
  * 不能通过 reflection attack 来调用私有构造方法。
- */
-
-/**
- * @author qianliqing
+ *
+ * @author CoderQian
  * @date 2018/4/8 下午3:49
- * email: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public enum SingletonEnum {

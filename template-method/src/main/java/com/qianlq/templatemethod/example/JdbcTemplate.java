@@ -5,9 +5,9 @@ import com.qianlq.templatemethod.example.constant.ConnectionConstant;
 import java.sql.*;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-14 20:59
- * @since v1.0
  */
 
 public abstract class JdbcTemplate {

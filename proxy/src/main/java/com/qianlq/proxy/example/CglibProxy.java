@@ -9,14 +9,16 @@ import java.lang.reflect.Method;
 
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-02-03 9:43 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class CglibProxy implements MethodInterceptor {
 
-    // CGlib需要代理的目标对象
+    /**
+     * CGlib需要代理的目标对象
+     */
     private Subject realSubject;
 
     public Object createProxyObject(Subject subject) {
@@ -24,8 +26,7 @@ public class CglibProxy implements MethodInterceptor {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(subject.getClass());
         enhancer.setCallback(this);
-        Object proxyObj = enhancer.create();
-        return proxyObj;
+        return enhancer.create();
     }
 
     @Override

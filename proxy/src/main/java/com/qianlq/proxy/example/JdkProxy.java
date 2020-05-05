@@ -7,9 +7,9 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-02-03 9:20 PM
- * mail: qianlq0824@gmail.com
+ * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
  */
 
 public class JdkProxy implements InvocationHandler {

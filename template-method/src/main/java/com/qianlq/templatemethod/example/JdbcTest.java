@@ -9,9 +9,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * @author qianliqing
+ * @author CoderQian
+ * @version v1.0
  * @date 2019-09-14 20:34
- * @since v1.0
  */
 
 public class JdbcTest {
