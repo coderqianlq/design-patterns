@@ -70,7 +70,7 @@
 * [命令模式](command)
 * [解释器模式](interpreter)
 * [模板方法模式](template-method)
-* 状态模式
+* [状态模式](state)
 * 迭代器模式
 * 中介者模式
 * 备忘录模式
