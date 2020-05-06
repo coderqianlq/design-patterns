@@ -2,13 +2,10 @@ package com.qianlq.observer.demo;
 
 /**
  * @author CoderQian
- * @date 2018-10-08 下午8:47
- * @concat <a href="mailto:qianlq0824@gmail.com">qianlq0824@gmail.com</a>
+ * @version v1.0
+ * @date 2020/5/6
  */
 
-public abstract class Observer {
-
-    protected Subject subject;
-
-    public abstract void update();
+public interface Observer {
+    void update();
 }

@@ -29,6 +29,7 @@
         <module>strategy</module>
         <module>template-method</module>
         <module>interpreter</module>
+        <module>state</module>
     </modules>
 
     <build>

@@ -1,9 +1,9 @@
 package com.qianlq.observer;
 
-import com.qianlq.observer.demo.BinaryObserver;
-import com.qianlq.observer.demo.HexObserver;
-import com.qianlq.observer.demo.OctalObserver;
-import com.qianlq.observer.demo.Subject;
+import com.qianlq.observer.example.BinaryObserver;
+import com.qianlq.observer.example.HexObserver;
+import com.qianlq.observer.example.OctalObserver;
+import com.qianlq.observer.example.Subject;
 
 /**
  * @author CoderQian

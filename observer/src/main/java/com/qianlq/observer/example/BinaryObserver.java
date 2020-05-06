@@ -1,4 +1,4 @@
-package com.qianlq.observer.demo;
+package com.qianlq.observer.example;
 
 /**
  * @author CoderQian
