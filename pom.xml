@@ -30,6 +30,7 @@
         <module>template-method</module>
         <module>interpreter</module>
         <module>state</module>
+        <module>iterator</module>
     </modules>
 
     <build>
