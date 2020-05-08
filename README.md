@@ -34,10 +34,10 @@
 * [状态模式](state)
 * [迭代器模式](iterator)
 * [中介者模式](mediator)
-* 备忘录模式
-* 访问者模式
+* [访问者模式](visitor)
+* [备忘录模式](memento)
 
 ## 推荐书籍、学习教程
 
 * 《Head First设计模式》
-* [菜鸟教程](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
+* [Java设计模式：23种设计模式全面解析（超级详细）](http://c.biancheng.net/design_pattern/)
