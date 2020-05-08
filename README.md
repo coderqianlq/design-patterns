@@ -33,7 +33,7 @@
 * [模板方法模式](template-method)
 * [状态模式](state)
 * [迭代器模式](iterator)
-* 中介者模式
+* [中介者模式](mediator)
 * 备忘录模式
 * 访问者模式
 
