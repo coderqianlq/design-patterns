@@ -32,6 +32,7 @@
         <module>state</module>
         <module>iterator</module>
         <module>mediator</module>
+        <module>visitor</module>
     </modules>
 
     <build>
