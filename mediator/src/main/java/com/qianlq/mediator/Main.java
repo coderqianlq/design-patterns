@@ -1,5 +1,10 @@
 package com.qianlq.mediator;
 
+import com.qianlq.mediator.demo.Colleague;
+import com.qianlq.mediator.demo.ConcreteColleague;
+import com.qianlq.mediator.demo.ConcreteMediator;
+import com.qianlq.mediator.demo.Mediator;
+
 /**
  * @author CoderQian
  * @version v1.0
@@ -7,4 +12,11 @@ package com.qianlq.mediator;
  */
 
 public class Main {
+
+    public static void main(String[] args) {
+        Mediator mediator = new ConcreteMediator();
+        Colleague colleague = new ConcreteColleague(mediator);
+        mediator.register(colleague);
+        mediator.common();
+    }
 }
